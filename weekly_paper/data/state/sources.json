@@ -1,0 +1,122 @@
+{
+  "hf-papers-weekly": {
+    "source_id": "hf-papers-weekly",
+    "last_run_at": "2026-05-06T08:56:34.878728+00:00",
+    "last_run_status": "ok",
+    "last_seen_at": "2026-05-05T00:00:00.000Z",
+    "last_seen_url": "https://huggingface.co/papers/2605.03571",
+    "last_error": "",
+    "consecutive_failures": 0,
+    "youtube_channel_id": "",
+    "items_ingested_total": 150,
+    "extras": {}
+  },
+  "dair-ai-newsletter": {
+    "source_id": "dair-ai-newsletter",
+    "last_run_at": "2026-05-06T08:56:34.879111+00:00",
+    "last_run_status": "ok",
+    "last_seen_at": "2026-05-03T15:02:56+00:00",
+    "last_seen_url": "https://nlp.elvissaravia.com/p/top-ai-papers-of-the-week-b95",
+    "last_error": "",
+    "consecutive_failures": 0,
+    "youtube_channel_id": "",
+    "items_ingested_total": 20,
+    "extras": {}
+  },
+  "blog-anthropic-claude-code": {
+    "source_id": "blog-anthropic-claude-code",
+    "last_run_at": "2026-05-03T17:00:48.056663+00:00",
+    "last_run_status": "fail",
+    "last_seen_at": "",
+    "last_seen_url": "",
+    "last_error": "fetch: HTTPError: HTTP Error 404: Not Found",
+    "consecutive_failures": 1,
+    "youtube_channel_id": "",
+    "items_ingested_total": 0,
+    "extras": {}
+  },
+  "blog-openai": {
+    "source_id": "blog-openai",
+    "last_run_at": "2026-05-06T08:56:34.879484+00:00",
+    "last_run_status": "ok",
+    "last_seen_at": "2026-05-05T10:00:00+00:00",
+    "last_seen_url": "https://openai.com/index/gpt-5-5-instant",
+    "last_error": "",
+    "consecutive_failures": 0,
+    "youtube_channel_id": "",
+    "items_ingested_total": 934,
+    "extras": {}
+  },
+  "blog-github-copilot": {
+    "source_id": "blog-github-copilot",
+    "last_run_at": "2026-05-06T08:56:34.879634+00:00",
+    "last_run_status": "ok",
+    "last_seen_at": "2026-05-05T14:30:00+00:00",
+    "last_seen_url": "https://github.blog/open-source/maintainers/welcome-to-maintainer-month-celebrating-the-people-behind-the-code/",
+    "last_error": "",
+    "consecutive_failures": 0,
+    "youtube_channel_id": "",
+    "items_ingested_total": 12,
+    "extras": {}
+  },
+  "blog-aider-paul-gauthier": {
+    "source_id": "blog-aider-paul-gauthier",
+    "last_run_at": "2026-05-06T08:56:34.879774+00:00",
+    "last_run_status": "ok",
+    "last_seen_at": "2025-05-08T00:00:00+00:00",
+    "last_seen_url": "https://aider.chat/2025/05/08/qwen3.html",
+    "last_error": "",
+    "consecutive_failures": 0,
+    "youtube_channel_id": "",
+    "items_ingested_total": 10,
+    "extras": {}
+  },
+  "blog-huggingface-trl": {
+    "source_id": "blog-huggingface-trl",
+    "last_run_at": "2026-05-06T08:56:34.879919+00:00",
+    "last_run_status": "ok",
+    "last_seen_at": "2026-04-29T16:45:09+00:00",
+    "last_seen_url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+    "last_error": "",
+    "consecutive_failures": 0,
+    "youtube_channel_id": "",
+    "items_ingested_total": 774,
+    "extras": {}
+  },
+  "blog-allen-institute-for-ai-tülu": {
+    "source_id": "blog-allen-institute-for-ai-tülu",
+    "last_run_at": "2026-05-06T08:56:34.880057+00:00",
+    "last_run_status": "ok",
+    "last_seen_at": "2024-11-07T21:11:30+00:00",
+    "last_seen_url": "https://medium.com/ai2-blog/were-moving-our-blog-5b6d6995e9d2?source=rss----43dbc3406ef1---4",
+    "last_error": "",
+    "consecutive_failures": 0,
+    "youtube_channel_id": "",
+    "items_ingested_total": 10,
+    "extras": {}
+  },
+  "blog-google-deepmind": {
+    "source_id": "blog-google-deepmind",
+    "last_run_at": "2026-05-06T08:56:34.880198+00:00",
+    "last_run_status": "ok",
+    "last_seen_at": "2026-04-30T12:14:15+00:00",
+    "last_seen_url": "https://deepmind.google/blog/ai-co-clinician/",
+    "last_error": "",
+    "consecutive_failures": 0,
+    "youtube_channel_id": "",
+    "items_ingested_total": 100,
+    "extras": {}
+  },
+  "alphaxiv-trending": {
+    "source_id": "alphaxiv-trending",
+    "last_run_at": "2026-05-06T08:56:34.879324+00:00",
+    "last_run_status": "ok",
+    "last_seen_at": "2026-05-05T17:55:25.000+00:00",
+    "last_seen_url": "https://www.alphaxiv.org/abs/2605.04036",
+    "last_error": "",
+    "consecutive_failures": 0,
+    "youtube_channel_id": "",
+    "items_ingested_total": 24,
+    "extras": {}
+  }
+}

@@ -1,0 +1,548 @@
+{
+  "$schema_version": "1.0",
+  "topic": "industry-agi",
+  "title": "AGI / 科技产业 / 产品 — 周报源",
+  "updated_at": "2026-05-04",
+  "description": "每周抓 RSS / YouTube / Substack / Apple Podcast，由 weekly_report pipeline 综合成双轨周报。tier=S 必读，A 按需，B 备选。disabled=true 表示暂时关闭（一般是只在公众号发布的源，等自建 RSSHub 时启用）。",
+  "groups": [
+    {"id": "EN_NEWSLETTER", "name": "英文 Newsletter / Blog（信噪比最高）"},
+    {"id": "EN_YT_PODCAST", "name": "英文 YouTube / 播客（深度访谈）"},
+    {"id": "EN_LAB_OFFICIAL", "name": "英文 — 一线 lab 官方"},
+    {"id": "CN_NEWSLETTER", "name": "中文 Newsletter / 站点（直接 RSS）"},
+    {"id": "CN_PODCAST", "name": "中文播客（小宇宙 / Apple Podcast RSS）"},
+    {"id": "CN_YT_PODCAST", "name": "中文 YouTube"},
+    {"id": "CN_RSSHUB", "name": "中文公众号（需自建 RSSHub，当前 disabled）"}
+  ],
+  "sources": [
+    {
+      "id": "stratechery",
+      "name": "Stratechery",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "S",
+      "lang": "en",
+      "rss_url": "https://stratechery.com/feed/",
+      "homepage": "https://stratechery.com/",
+      "notes": "付费内容预览也算高密度信号"
+    },
+    {
+      "id": "import-ai",
+      "name": "Import AI (Jack Clark)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "S",
+      "lang": "en",
+      "rss_url": "https://importai.substack.com/feed",
+      "homepage": "https://importai.substack.com/"
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects (Nathan Lambert)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "S",
+      "lang": "en",
+      "rss_url": "https://www.interconnects.ai/feed",
+      "homepage": "https://www.interconnects.ai/"
+    },
+    {
+      "id": "semianalysis",
+      "name": "SemiAnalysis (Dylan Patel)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "S",
+      "lang": "en",
+      "rss_url": "https://semianalysis.com/feed/",
+      "homepage": "https://semianalysis.com/"
+    },
+    {
+      "id": "platformer",
+      "name": "Platformer (Casey Newton)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "A",
+      "lang": "en",
+      "rss_url": "https://www.platformer.news/feed",
+      "homepage": "https://www.platformer.news/"
+    },
+    {
+      "id": "newcomer",
+      "name": "Newcomer (Eric Newcomer)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "A",
+      "lang": "en",
+      "rss_url": "https://www.newcomer.co/feed",
+      "homepage": "https://www.newcomer.co/"
+    },
+    {
+      "id": "one-useful-thing",
+      "name": "One Useful Thing (Ethan Mollick)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "A",
+      "lang": "en",
+      "rss_url": "https://www.oneusefulthing.org/feed",
+      "homepage": "https://www.oneusefulthing.org/"
+    },
+    {
+      "id": "ai-snake-oil",
+      "name": "AI Snake Oil (Narayanan & Kapoor)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "A",
+      "lang": "en",
+      "rss_url": "https://www.aisnakeoil.com/feed",
+      "homepage": "https://www.aisnakeoil.com/"
+    },
+    {
+      "id": "pragmatic-engineer",
+      "name": "Pragmatic Engineer (Gergely Orosz)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "A",
+      "lang": "en",
+      "rss_url": "https://newsletter.pragmaticengineer.com/feed",
+      "homepage": "https://newsletter.pragmaticengineer.com/"
+    },
+    {
+      "id": "lennys-newsletter",
+      "name": "Lenny's Newsletter",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "A",
+      "lang": "en",
+      "rss_url": "https://www.lennysnewsletter.com/feed",
+      "homepage": "https://www.lennysnewsletter.com/"
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space (swyx)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "S",
+      "lang": "en",
+      "rss_url": "https://www.latent.space/feed",
+      "youtube_handle": "LatentSpacePod",
+      "homepage": "https://www.latent.space/",
+      "notes": "newsletter + podcast 同源"
+    },
+    {
+      "id": "dwarkesh-substack",
+      "name": "Dwarkesh Patel (Substack)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "S",
+      "lang": "en",
+      "rss_url": "https://www.dwarkesh.com/feed",
+      "homepage": "https://www.dwarkesh.com/"
+    },
+    {
+      "id": "big-technology",
+      "name": "Big Technology (Alex Kantrowitz)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "A",
+      "lang": "en",
+      "rss_url": "https://www.bigtechnology.com/feed",
+      "youtube_handle": "bigtechnology",
+      "homepage": "https://www.bigtechnology.com/"
+    },
+    {
+      "id": "chinatalk",
+      "name": "ChinaTalk (Jordan Schneider)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "S",
+      "lang": "en",
+      "rss_url": "https://www.chinatalk.media/feed",
+      "homepage": "https://www.chinatalk.media/"
+    },
+
+    {
+      "id": "dwarkesh-yt",
+      "name": "Dwarkesh Patel (YouTube)",
+      "group_id": "EN_YT_PODCAST",
+      "type": "youtube",
+      "tier": "S",
+      "lang": "en",
+      "youtube_handle": "DwarkeshPatel",
+      "homepage": "https://www.youtube.com/@DwarkeshPatel"
+    },
+    {
+      "id": "no-priors",
+      "name": "No Priors",
+      "group_id": "EN_YT_PODCAST",
+      "type": "youtube",
+      "tier": "S",
+      "lang": "en",
+      "youtube_handle": "NoPriorsPodcast",
+      "rss_url": "https://feeds.megaphone.fm/STU4418364045",
+      "homepage": "https://www.youtube.com/@NoPriorsPodcast"
+    },
+    {
+      "id": "unsupervised-learning",
+      "name": "Unsupervised Learning (Redpoint)",
+      "group_id": "EN_YT_PODCAST",
+      "type": "youtube",
+      "tier": "A",
+      "lang": "en",
+      "youtube_handle": "RedpointAI",
+      "homepage": "https://www.youtube.com/@RedpointAI"
+    },
+    {
+      "id": "cognitive-revolution",
+      "name": "The Cognitive Revolution (Nathan Labenz)",
+      "group_id": "EN_YT_PODCAST",
+      "type": "youtube",
+      "tier": "S",
+      "lang": "en",
+      "youtube_handle": "CognitiveRevolutionPodcast",
+      "homepage": "https://www.youtube.com/@CognitiveRevolutionPodcast"
+    },
+    {
+      "id": "bg2pod",
+      "name": "BG2 Pod (Brad Gerstner & Bill Gurley)",
+      "group_id": "EN_YT_PODCAST",
+      "type": "youtube",
+      "tier": "S",
+      "lang": "en",
+      "youtube_handle": "bg2pod",
+      "homepage": "https://www.youtube.com/@bg2pod"
+    },
+    {
+      "id": "acquired",
+      "name": "Acquired",
+      "group_id": "EN_YT_PODCAST",
+      "type": "podcast",
+      "tier": "A",
+      "lang": "en",
+      "rss_url": "https://feeds.transistor.fm/acquired",
+      "youtube_handle": "AcquiredFM",
+      "homepage": "https://www.acquired.fm/"
+    },
+    {
+      "id": "hard-fork",
+      "name": "Hard Fork (NYT)",
+      "group_id": "EN_YT_PODCAST",
+      "type": "podcast",
+      "tier": "A",
+      "lang": "en",
+      "rss_url": "https://feeds.simplecast.com/l2i9YnTd",
+      "youtube_handle": "hardfork",
+      "homepage": "https://www.nytimes.com/column/hard-fork"
+    },
+    {
+      "id": "decoder",
+      "name": "Decoder (Nilay Patel, The Verge)",
+      "group_id": "EN_YT_PODCAST",
+      "type": "youtube",
+      "tier": "A",
+      "lang": "en",
+      "youtube_handle": "decoder",
+      "homepage": "https://www.theverge.com/decoder-podcast-with-nilay-patel"
+    },
+    {
+      "id": "lex-fridman",
+      "name": "Lex Fridman Podcast",
+      "group_id": "EN_YT_PODCAST",
+      "type": "podcast",
+      "tier": "B",
+      "lang": "en",
+      "rss_url": "https://lexfridman.com/feed/podcast/",
+      "homepage": "https://lexfridman.com/podcast/",
+      "notes": "近年信噪比下降，归到 B"
+    },
+    {
+      "id": "a16z-podcast",
+      "name": "a16z Podcast",
+      "group_id": "EN_YT_PODCAST",
+      "type": "podcast",
+      "tier": "A",
+      "lang": "en",
+      "rss_url": "https://feeds.simplecast.com/JGE3yC0V",
+      "youtube_handle": "a16z",
+      "homepage": "https://a16z.com/podcasts/"
+    },
+    {
+      "id": "20vc",
+      "name": "20VC (Harry Stebbings)",
+      "group_id": "EN_YT_PODCAST",
+      "type": "youtube",
+      "tier": "B",
+      "lang": "en",
+      "youtube_handle": "20VC",
+      "homepage": "https://www.youtube.com/@20VC"
+    },
+    {
+      "id": "logan-bartlett",
+      "name": "The Logan Bartlett Show",
+      "group_id": "EN_YT_PODCAST",
+      "type": "youtube",
+      "tier": "B",
+      "lang": "en",
+      "youtube_handle": "theloganbartlettshow",
+      "homepage": "https://www.youtube.com/@theloganbartlettshow"
+    },
+    {
+      "id": "lennys-podcast",
+      "name": "Lenny's Podcast",
+      "group_id": "EN_YT_PODCAST",
+      "type": "youtube",
+      "tier": "A",
+      "lang": "en",
+      "youtube_handle": "LennysPodcast",
+      "homepage": "https://www.youtube.com/@LennysPodcast"
+    },
+
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "group_id": "EN_LAB_OFFICIAL",
+      "type": "youtube",
+      "tier": "S",
+      "lang": "en",
+      "youtube_handle": "anthropic-ai",
+      "homepage": "https://www.youtube.com/@anthropic-ai"
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "group_id": "EN_LAB_OFFICIAL",
+      "type": "youtube",
+      "tier": "S",
+      "lang": "en",
+      "youtube_handle": "googledeepmind",
+      "homepage": "https://www.youtube.com/@googledeepmind"
+    },
+    {
+      "id": "ycombinator",
+      "name": "Y Combinator",
+      "group_id": "EN_LAB_OFFICIAL",
+      "type": "youtube",
+      "tier": "A",
+      "lang": "en",
+      "youtube_handle": "ycombinator",
+      "homepage": "https://www.youtube.com/@ycombinator"
+    },
+    {
+      "id": "sequoia-capital",
+      "name": "Sequoia Capital (incl. Training Data)",
+      "group_id": "EN_LAB_OFFICIAL",
+      "type": "youtube",
+      "tier": "A",
+      "lang": "en",
+      "youtube_handle": "sequoiacapital",
+      "homepage": "https://www.youtube.com/@sequoiacapital"
+    },
+    {
+      "id": "anthropic-engineering",
+      "name": "Anthropic Engineering",
+      "group_id": "EN_LAB_OFFICIAL",
+      "type": "scrape",
+      "tier": "S",
+      "lang": "en",
+      "index_url": "https://www.anthropic.com/engineering",
+      "article_url_prefix": "https://www.anthropic.com/engineering/",
+      "homepage": "https://www.anthropic.com/engineering",
+      "notes": "Next.js SSR，无 RSS；从 index 页抽 slug，再 fetch 各文章页拿 og:title / og:description / 'Published <date>' 元信息。"
+    },
+    {
+      "id": "claude-blog",
+      "name": "Claude Blog",
+      "group_id": "EN_LAB_OFFICIAL",
+      "type": "scrape",
+      "tier": "S",
+      "lang": "en",
+      "index_url": "https://claude.com/blog",
+      "article_url_prefix": "https://claude.com/blog/",
+      "homepage": "https://claude.com/blog",
+      "notes": "Webflow CMS SSR，无 RSS；同上策略，文章页带 JSON-LD datePublished。Anthropic 的产品/客户/行业更新主阵地。"
+    },
+    {
+      "id": "google-deepmind-blog",
+      "name": "Google DeepMind (blog.google)",
+      "group_id": "EN_LAB_OFFICIAL",
+      "type": "newsletter",
+      "tier": "S",
+      "lang": "en",
+      "rss_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/rss/",
+      "homepage": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/",
+      "notes": "blog.google 上 DeepMind 主题的官方 RSS（Gemini / Genie / AlphaFold / Robotics 等产品 + 研究公告）。"
+    },
+    {
+      "id": "deepmind-publications",
+      "name": "Google DeepMind Publications",
+      "group_id": "EN_LAB_OFFICIAL",
+      "type": "scrape",
+      "tier": "S",
+      "lang": "en",
+      "index_url": "https://deepmind.google/research/publications/",
+      "article_url_prefix": "https://deepmind.google/research/publications/",
+      "homepage": "https://deepmind.google/research/publications/",
+      "notes": "DeepMind research publications 列表（首屏 30 篇 SSR，Webflow 无引号 HTML 已兼容）。文章页带 og:description + JSON-LD datePublished。研究侧内容，weekly_paper 也会消费这个源。"
+    },
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "group_id": "EN_LAB_OFFICIAL",
+      "type": "newsletter",
+      "tier": "S",
+      "lang": "en",
+      "rss_url": "https://openai.com/news/rss.xml",
+      "homepage": "https://openai.com/news",
+      "notes": "OpenAI 官方新闻 / 产品 / system card RSS（GPT 系列发布、Operator、API、Safety 等）。"
+    },
+    {
+      "id": "openai-yt",
+      "name": "OpenAI",
+      "group_id": "EN_LAB_OFFICIAL",
+      "type": "youtube",
+      "tier": "S",
+      "lang": "en",
+      "youtube_handle": "OpenAI",
+      "homepage": "https://www.youtube.com/@OpenAI",
+      "notes": "OpenAI 官方 YouTube 频道（DevDay、产品演示、研究员 talk）。"
+    },
+
+    {
+      "id": "zhang-xiaojun",
+      "name": "张小珺",
+      "group_id": "CN_YT_PODCAST",
+      "type": "youtube",
+      "tier": "S",
+      "lang": "zh",
+      "youtube_handle": "xiaojunpodcast",
+      "homepage": "https://www.youtube.com/@xiaojunpodcast"
+    },
+    {
+      "id": "whynottv",
+      "name": "WhyNotTV",
+      "group_id": "CN_YT_PODCAST",
+      "type": "youtube",
+      "tier": "A",
+      "lang": "zh",
+      "youtube_handle": "whynottv1999",
+      "homepage": "https://www.youtube.com/@whynottv1999"
+    },
+
+    {
+      "id": "geekpark",
+      "name": "极客公园",
+      "group_id": "CN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "A",
+      "lang": "zh",
+      "rss_url": "https://www.geekpark.net/rss",
+      "homepage": "https://www.geekpark.net/",
+      "notes": "中文科技日报，AI/产品/创业广覆盖"
+    },
+    {
+      "id": "syncedreview",
+      "name": "机器之心 / Synced (EN)",
+      "group_id": "EN_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "B",
+      "lang": "en",
+      "rss_url": "https://syncedreview.com/feed/",
+      "homepage": "https://syncedreview.com/",
+      "notes": "机器之心英文版（中文站无 RSS）；偏论文播报"
+    },
+
+    {
+      "id": "onboard",
+      "name": "OnBoard! (Monica Xie)",
+      "group_id": "CN_PODCAST",
+      "type": "podcast",
+      "tier": "S",
+      "lang": "zh",
+      "rss_url": "https://feed.xyzfm.space/xxg7ryklkkft",
+      "homepage": "https://podcasts.apple.com/us/podcast/onboard/id1613083252",
+      "notes": "硅谷 VC + 创业者深度对谈，AGI / coding agent / 一线 builder 含量极高"
+    },
+    {
+      "id": "latetalk",
+      "name": "晚点聊 LateTalk",
+      "group_id": "CN_PODCAST",
+      "type": "podcast",
+      "tier": "S",
+      "lang": "zh",
+      "rss_url": "https://feeds.fireside.fm/latetalk/rss",
+      "homepage": "https://podcasts.apple.com/us/podcast/%E6%99%9A%E7%82%B9%E8%81%8A-latetalk/id1564877433",
+      "notes": "晚点LatePost 的科技访谈，程曼祺主持，国内大模型/具身/创业一线"
+    },
+    {
+      "id": "latescene",
+      "name": "晚点在场",
+      "group_id": "CN_PODCAST",
+      "type": "podcast",
+      "tier": "A",
+      "lang": "zh",
+      "rss_url": "https://feed.xyzfm.space/ayrmwhxwgy6q",
+      "homepage": "https://podcasts.apple.com/cn/podcast/%E6%99%9A%E7%82%B9%E5%9C%A8%E5%9C%BA/id1827801264",
+      "notes": "晚点新栏目，更偏现场报道"
+    },
+    {
+      "id": "42zhang-jing",
+      "name": "42章经",
+      "group_id": "CN_PODCAST",
+      "type": "podcast",
+      "tier": "A",
+      "lang": "zh",
+      "rss_url": "https://feed.xyzfm.space/evgg6xle9rdc",
+      "homepage": "https://podcasts.apple.com/dk/podcast/42%E7%AB%A0%E7%BB%8F/id1700299886",
+      "notes": "曲凯主持，AI/Agent/创业 founder 对谈"
+    },
+    {
+      "id": "sv101",
+      "name": "硅谷101",
+      "group_id": "CN_PODCAST",
+      "type": "podcast",
+      "tier": "A",
+      "lang": "zh",
+      "rss_url": "https://feeds.fireside.fm/sv101/rss",
+      "homepage": "https://sv101.fireside.fm/",
+      "notes": "泓君的硅谷深度访谈，覆盖 AI / 半导体 / 商业"
+    },
+
+    {
+      "id": "haiwai-dujiaoshou",
+      "name": "海外独角兽 / 拾象",
+      "group_id": "CN_RSSHUB",
+      "type": "wechat",
+      "tier": "S",
+      "lang": "zh",
+      "rss_url": null,
+      "rsshub_path": "/wechat/ekook/haiwaiunicorn",
+      "homepage": "https://shixiangcap.com/",
+      "notes": "公众号独发，需自建 RSSHub。手动月更 PDF 报告也可考虑.",
+      "disabled": true
+    },
+    {
+      "id": "founder-park",
+      "name": "Founder Park / 极客公园 founder 内容",
+      "group_id": "CN_RSSHUB",
+      "type": "wechat",
+      "tier": "A",
+      "lang": "zh",
+      "rss_url": null,
+      "rsshub_path": null,
+      "homepage": "https://www.founderpark.ai/",
+      "notes": "founderpark.ai 站点无公开 RSS，等待自建 RSSHub",
+      "disabled": true
+    },
+    {
+      "id": "yuanchuan",
+      "name": "远川研究所",
+      "group_id": "CN_RSSHUB",
+      "type": "wechat",
+      "tier": "A",
+      "lang": "zh",
+      "rss_url": null,
+      "rsshub_path": null,
+      "homepage": "https://www.yuanchuan.cn/",
+      "notes": "微信公众号 YuanChuanInstitution 独发，需自建 RSSHub",
+      "disabled": true
+    }
+  ]
+}

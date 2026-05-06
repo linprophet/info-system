@@ -1,0 +1,237 @@
+{
+  "$schema_version": "1.0",
+  "topic": "video-generation",
+  "title": "视频生成 · 顶级机构订阅",
+  "updated_at": "2026-05-03",
+  "description": "2026 年带原生音频的四大前沿模型 = Sora 2 / Veo 3.1 / Kling 3.0 / Seedance 2.0；开源派由中国实验室主导（Wan / Hunyuan / CogVideoX / Open-Sora）。",
+  "groups": [
+    {
+      "id": "VG1",
+      "name": "前沿闭源 · API-only",
+      "subtitle": "2026 四巨头 + 商用 SaaS"
+    },
+    {
+      "id": "VG2",
+      "name": "开源 / 半开源",
+      "subtitle": "GitHub & HuggingFace 上能拉到权重的"
+    }
+  ],
+  "orgs": [
+    {
+      "name": "OpenAI Sora",
+      "group_id": "VG1",
+      "key_works": "Sora, Sora 2 (20-25s, audio native)",
+      "x_handle": "OpenAI",
+      "blog_rss": "https://openai.com/news/rss.xml",
+      "github_org": "openai",
+      "huggingface_org": "openai",
+      "homepage": "https://openai.com/sora",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Google DeepMind Veo",
+      "group_id": "VG1",
+      "key_works": "Veo 3 / Veo 3.1 (4K, 48kHz audio), Lumiere",
+      "x_handle": "GoogleDeepMind",
+      "blog_rss": "https://deepmind.google/blog/rss.xml",
+      "github_org": "google-deepmind",
+      "huggingface_org": "google",
+      "homepage": "https://deepmind.google/models/veo/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Kuaishou Kling",
+      "group_id": "VG1",
+      "key_works": "Kling 1.x → 3.0 (v2.6 Pro), Kolors",
+      "x_handle": "Kling_ai",
+      "blog_rss": null,
+      "github_org": "Kwai-Kolors",
+      "huggingface_org": "Kwai-Kolors",
+      "homepage": "https://klingai.com/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "ByteDance Seed (Vision)",
+      "group_id": "VG1",
+      "key_works": "Seedance 1.0 / 2.0, Seedream, Goku",
+      "x_handle": "Seed_LLM",
+      "blog_rss": null,
+      "github_org": "ByteDance-Seed",
+      "huggingface_org": "ByteDance-Seed",
+      "homepage": "https://seed.bytedance.com/",
+      "verified": false,
+      "verify_notes": "auto-verified 2026-05-03; failed: X (404)"
+    },
+    {
+      "name": "Runway",
+      "group_id": "VG1",
+      "key_works": "Gen-3 Alpha / Gen-4, Aleph",
+      "x_handle": "runwayml",
+      "blog_rss": null,
+      "github_org": "runwayml",
+      "huggingface_org": "runwayml",
+      "homepage": "https://runwayml.com/research",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Luma AI",
+      "group_id": "VG1",
+      "key_works": "Dream Machine, Ray 2 / Ray 3",
+      "x_handle": "LumaLabsAI",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://lumalabs.ai/news",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Pika Labs",
+      "group_id": "VG1",
+      "key_works": "Pika 1.x / 2.x",
+      "x_handle": "pika_labs",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://pika.art/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "MiniMax Hailuo",
+      "group_id": "VG1",
+      "key_works": "Hailuo 01 / 02",
+      "x_handle": "MiniMax_AI",
+      "blog_rss": null,
+      "github_org": "MiniMax-AI",
+      "huggingface_org": "MiniMaxAI",
+      "homepage": "https://hailuoai.video/",
+      "verified": false,
+      "verify_notes": "auto-verified 2026-05-03; failed: X (404)"
+    },
+    {
+      "name": "Higgsfield AI",
+      "group_id": "VG1",
+      "key_works": "Higgsfield (motion-control)",
+      "x_handle": "higgsfield_ai",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://higgsfield.ai/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Tencent Hunyuan",
+      "group_id": "VG2",
+      "key_works": "HunyuanVideo, HunyuanVideo-Avatar, HunyuanDiT",
+      "x_handle": "TencentHunyuan",
+      "blog_rss": null,
+      "github_org": "Tencent",
+      "huggingface_org": "tencent",
+      "homepage": "https://hunyuan.tencent.com/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Alibaba Tongyi · Wan",
+      "group_id": "VG2",
+      "key_works": "Wan 2.1 / 2.2 (Apache-2.0), Wan 2.5",
+      "x_handle": "Alibaba_Wan",
+      "blog_rss": null,
+      "github_org": "Wan-Video",
+      "huggingface_org": "Wan-AI",
+      "homepage": "https://github.com/Wan-Video",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Zhipu AI · CogVideoX",
+      "group_id": "VG2",
+      "key_works": "CogVideoX-2B / 5B, CogVideoX 1.5",
+      "x_handle": null,
+      "blog_rss": null,
+      "github_org": "THUDM",
+      "huggingface_org": "THUDM",
+      "homepage": "https://github.com/THUDM/CogVideo",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Lightricks · LTX-Video",
+      "group_id": "VG2",
+      "key_works": "LTX-Video (real-time)",
+      "x_handle": "Lightricks",
+      "blog_rss": null,
+      "github_org": "Lightricks",
+      "huggingface_org": "Lightricks",
+      "homepage": "https://www.lightricks.com/research",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "HPC-AI Tech · Open-Sora",
+      "group_id": "VG2",
+      "key_works": "Open-Sora 1.x / 2.0",
+      "x_handle": "YangYou1991",
+      "blog_rss": null,
+      "github_org": "hpcaitech",
+      "huggingface_org": "hpcai-tech",
+      "homepage": "https://github.com/hpcaitech/Open-Sora",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Genmo · Mochi",
+      "group_id": "VG2",
+      "key_works": "Mochi 1 (Apache-2.0), Mochi 2",
+      "x_handle": "genmoai",
+      "blog_rss": null,
+      "github_org": "genmoai",
+      "huggingface_org": "genmo",
+      "homepage": "https://www.genmo.ai/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Meta GenAI · Movie Gen",
+      "group_id": "VG2",
+      "key_works": "Movie Gen, Emu Video",
+      "x_handle": "AIatMeta",
+      "blog_rss": null,
+      "github_org": "facebookresearch",
+      "huggingface_org": "facebook",
+      "homepage": "https://ai.meta.com/research/movie-gen/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Stability AI",
+      "group_id": "VG2",
+      "key_works": "Stable Video Diffusion, SV4D",
+      "x_handle": "StabilityAI",
+      "blog_rss": null,
+      "github_org": "Stability-AI",
+      "huggingface_org": "stabilityai",
+      "homepage": "https://stability.ai/news",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "NVIDIA Cosmos",
+      "group_id": "VG2",
+      "key_works": "Cosmos-Predict (video & world dual)",
+      "x_handle": "NVIDIAAIDev",
+      "blog_rss": null,
+      "github_org": "NVIDIA",
+      "huggingface_org": "nvidia",
+      "homepage": "https://research.nvidia.com/labs/dir/cosmos1/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    }
+  ]
+}

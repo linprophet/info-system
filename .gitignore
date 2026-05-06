@@ -1,0 +1,32 @@
+# Generated artifacts (keep source-of-truth, ignore derivatives)
+topics/*/out/
+out/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Weekly report runtime data (only commit final reports + source-of-truth state)
+weekly_report/data/items/
+weekly_report/data/filtered/
+weekly_report/data/clusters/
+weekly_report/data/cache/
+# state/ and reports/ are committed for history
+
+# Weekly paper runtime data (same policy as weekly_report)
+weekly_paper/data/items/
+weekly_paper/data/filtered/
+weekly_paper/data/cache/
+# state/ and reports/ are committed for history

@@ -1,0 +1,234 @@
+{
+  "$schema_version": "1.0",
+  "topic": "agent-rl",
+  "title": "Agent RL · 顶级机构订阅",
+  "updated_at": "2026-05-03",
+  "description": "Agent training / RLVR / RL 基础设施。这块的订阅以 GitHub Releases 为主，X 次之。",
+  "groups": [
+    {
+      "id": "AR1",
+      "name": "训练框架 · 基础设施",
+      "subtitle": "verl / OpenRLHF / NeMo-RL / TRL / AgentRL"
+    },
+    {
+      "id": "AR2",
+      "name": "前沿模型方 · RL 出 reasoning/agent",
+      "subtitle": "DeepSeek / OpenAI / Anthropic / Moonshot / xAI"
+    },
+    {
+      "id": "AR3",
+      "name": "方法学派 · 算法/Recipe",
+      "subtitle": "Tülu RLVR / SimpleRL / TinyZero / SFR-DR"
+    }
+  ],
+  "orgs": [
+    {
+      "name": "ByteDance Seed · veRL",
+      "group_id": "AR1",
+      "key_works": "veRL (事实标准 RL infra), Agent-R, M3-Agent",
+      "x_handle": "Seed_LLM",
+      "blog_rss": null,
+      "github_org": "volcengine",
+      "huggingface_org": "ByteDance-Seed",
+      "homepage": "https://github.com/volcengine/verl",
+      "verified": false,
+      "notes": "重点订阅 volcengine/verl release 和 ByteDance-Seed org 的 agent 系列 repo",
+      "verify_notes": "auto-verified 2026-05-03; failed: X (404)"
+    },
+    {
+      "name": "OpenRLHF (社区)",
+      "group_id": "AR1",
+      "key_works": "OpenRLHF (PPO / GRPO / RLOO / agent paradigm)",
+      "x_handle": null,
+      "blog_rss": null,
+      "github_org": "OpenRLHF",
+      "huggingface_org": "OpenRLHF",
+      "homepage": "https://openrlhf.readthedocs.io/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "NVIDIA · NeMo-RL",
+      "group_id": "AR1",
+      "key_works": "NeMo-RL, GDPO / DAPO, Nemotron",
+      "x_handle": "NVIDIAAIDev",
+      "blog_rss": null,
+      "github_org": "NVIDIA-NeMo",
+      "huggingface_org": "nvidia",
+      "homepage": "https://github.com/NVIDIA-NeMo/RL",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "THUDM (Tsinghua KEG)",
+      "group_id": "AR1",
+      "key_works": "AgentRL (AutoGLM 同源), GLM-4",
+      "x_handle": "thukeg",
+      "blog_rss": null,
+      "github_org": "THUDM",
+      "huggingface_org": "THUDM",
+      "homepage": "https://github.com/THUDM/AgentRL",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "HuggingFace · TRL",
+      "group_id": "AR1",
+      "key_works": "TRL (PPO/DPO/GRPO trainer), Open-R1",
+      "x_handle": "huggingface",
+      "blog_rss": "https://huggingface.co/blog/feed.xml",
+      "github_org": "huggingface",
+      "huggingface_org": "huggingface",
+      "homepage": "https://github.com/huggingface/trl",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Berkeley Sky · SkyRL",
+      "group_id": "AR1",
+      "key_works": "SkyRL (Anyscale + Berkeley Sky Lab)",
+      "x_handle": "NovaSkyAI",
+      "blog_rss": null,
+      "github_org": "NovaSky-AI",
+      "huggingface_org": "NovaSky-AI",
+      "homepage": "https://novasky-ai.github.io/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Microsoft Research Asia · rStar",
+      "group_id": "AR1",
+      "key_works": "rStar2-Agent, GRPO-RoC",
+      "x_handle": "MSFTResearch",
+      "blog_rss": null,
+      "github_org": "microsoft",
+      "huggingface_org": "microsoft",
+      "homepage": "https://github.com/microsoft/rStar",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Salesforce AI Research",
+      "group_id": "AR1",
+      "key_works": "SFR-DeepResearch, Moirai, BLIP",
+      "x_handle": "SFResearch",
+      "blog_rss": null,
+      "github_org": "SalesforceAIResearch",
+      "huggingface_org": "Salesforce",
+      "homepage": "https://www.salesforceairesearch.com/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Scale AI · SEAL Labs",
+      "group_id": "AR1",
+      "key_works": "Agent-RLVR (RLVR for agents)",
+      "x_handle": "scale_AI",
+      "blog_rss": null,
+      "github_org": "ScaleAI",
+      "huggingface_org": null,
+      "homepage": "https://labs.scale.com/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "DeepSeek-AI",
+      "group_id": "AR2",
+      "key_works": "R1 (GRPO), V3.2-Exp, R2",
+      "x_handle": "deepseek_ai",
+      "blog_rss": null,
+      "github_org": "deepseek-ai",
+      "huggingface_org": "deepseek-ai",
+      "homepage": "https://www.deepseek.com/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "OpenAI Research",
+      "group_id": "AR2",
+      "key_works": "o3, Deep Research, Operator (agent RL)",
+      "x_handle": "OpenAI",
+      "blog_rss": "https://openai.com/news/rss.xml",
+      "github_org": "openai",
+      "huggingface_org": "openai",
+      "homepage": "https://openai.com/research/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Anthropic Research",
+      "group_id": "AR2",
+      "key_works": "Claude Opus 4.5 (computer use, tool-use RL)",
+      "x_handle": "AnthropicAI",
+      "blog_rss": null,
+      "github_org": "anthropics",
+      "huggingface_org": "Anthropic",
+      "homepage": "https://www.anthropic.com/research",
+      "verified": false,
+      "verify_notes": "auto-verified 2026-05-03; failed: Blog RSS (404)",
+      "notes": "Anthropic news 已无 RSS（Next.js SPA），等 RSSHub 或自定义 scraper"
+    },
+    {
+      "name": "Moonshot AI · Kimi",
+      "group_id": "AR2",
+      "key_works": "Kimi K1.5 / K2 (agentic RL with long-context)",
+      "x_handle": "Kimi_Moonshot",
+      "blog_rss": null,
+      "github_org": "MoonshotAI",
+      "huggingface_org": "moonshotai",
+      "homepage": "https://kimi.moonshot.cn/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "xAI",
+      "group_id": "AR2",
+      "key_works": "Grok 4 (reasoning RL)",
+      "x_handle": "xai",
+      "blog_rss": null,
+      "github_org": "xai-org",
+      "huggingface_org": "xai-org",
+      "homepage": "https://x.ai/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Allen Institute for AI · Tülu",
+      "group_id": "AR3",
+      "key_works": "Tülu 3 (开放完整 SFT+DPO+RLVR), OLMo",
+      "x_handle": "allen_ai",
+      "blog_rss": "https://medium.com/feed/ai2-blog",
+      "github_org": "allenai",
+      "huggingface_org": "allenai",
+      "homepage": "https://allenai.org/post-training",
+      "verified": false,
+      "notes": "follow @natolambert (Nathan Lambert) 也强烈推荐",
+      "verify_notes": "auto-verified 2026-05-03; failed: Blog RSS (404)"
+    },
+    {
+      "name": "Sea AI Lab · SimpleRL / TinyZero",
+      "group_id": "AR3",
+      "key_works": "SimpleRL-Zoo (复现 R1), TinyZero",
+      "x_handle": null,
+      "blog_rss": null,
+      "github_org": "hkust-nlp",
+      "huggingface_org": "sail",
+      "homepage": "https://github.com/hkust-nlp/simpleRL-reason",
+      "verified": true,
+      "notes": "TinyZero 在 Jiayi-Pan/TinyZero",
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "NousResearch (社区)",
+      "group_id": "AR3",
+      "key_works": "DeepHermes, Atropos (RL framework)",
+      "x_handle": "NousResearch",
+      "blog_rss": null,
+      "github_org": "NousResearch",
+      "huggingface_org": "NousResearch",
+      "homepage": "https://nousresearch.com/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    }
+  ]
+}

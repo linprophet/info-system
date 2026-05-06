@@ -1,0 +1,196 @@
+{
+  "$schema_version": "1.0",
+  "topic": "world-model",
+  "title": "World Model · 顶级机构订阅",
+  "updated_at": "2026-05-03",
+  "description": "2026 是 World Model 之年。三层结构 = LLM + WFM + LGM；分四条赛道：通用实时交互、自动驾驶、机器人、3D 场景。",
+  "groups": [
+    {
+      "id": "WM1",
+      "name": "通用 / 实时交互",
+      "subtitle": "Genie 3 / Cosmos / V-JEPA / Marble"
+    },
+    {
+      "id": "WM2",
+      "name": "自动驾驶 World Model",
+      "subtitle": "GAIA-3 / Waymo / Tesla / XPENG"
+    },
+    {
+      "id": "WM3",
+      "name": "交互 / 游戏 / 机器人",
+      "subtitle": "Decart / Odyssey / 1X / Niantic"
+    }
+  ],
+  "orgs": [
+    {
+      "name": "Google DeepMind · Genie",
+      "group_id": "WM1",
+      "key_works": "Genie 1/2/3 (real-time 720p, multi-min consistency)",
+      "x_handle": "GoogleDeepMind",
+      "blog_rss": "https://deepmind.google/blog/rss.xml",
+      "github_org": "google-deepmind",
+      "huggingface_org": "google",
+      "homepage": "https://deepmind.google/models/genie/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "NVIDIA GEAR · Cosmos",
+      "group_id": "WM1",
+      "key_works": "Cosmos Predict / Transfer / Reason (9000T tokens)",
+      "x_handle": "DrJimFan",
+      "blog_rss": null,
+      "github_org": "NVIDIA",
+      "huggingface_org": "nvidia",
+      "homepage": "https://research.nvidia.com/labs/gear/",
+      "verified": true,
+      "notes": "follow @DrJimFan (Jim Fan) 比订阅 NVIDIA Research 主页信噪比高得多",
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Meta FAIR · V-JEPA",
+      "group_id": "WM1",
+      "key_works": "V-JEPA 2 / 2.1 (1.2B, 1M h video)",
+      "x_handle": "ylecun",
+      "blog_rss": null,
+      "github_org": "facebookresearch",
+      "huggingface_org": "facebook",
+      "homepage": "https://ai.meta.com/vjepa/",
+      "verified": true,
+      "notes": "Yann LeCun 是 V-JEPA 路线最强 promoter",
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "World Labs (Fei-Fei Li)",
+      "group_id": "WM1",
+      "key_works": "Marble (3D scene from text, $5B 估值)",
+      "x_handle": "theworldlabs",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://www.worldlabs.ai/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Wayve",
+      "group_id": "WM2",
+      "key_works": "GAIA-1 / GAIA-2 / GAIA-3 (15B), LINGO",
+      "x_handle": "wayve_ai",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://wayve.ai/thinking/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Waymo",
+      "group_id": "WM2",
+      "key_works": "Waymo World Model (Genie 3 改造, 多传感器仿真)",
+      "x_handle": "Waymo",
+      "blog_rss": null,
+      "github_org": "waymo-research",
+      "huggingface_org": null,
+      "homepage": "https://waymo.com/blog/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Tesla AI",
+      "group_id": "WM2",
+      "key_works": "World Sim (FSD v13/v14)",
+      "x_handle": "Tesla_AI",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://www.tesla.com/AI",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "XPENG",
+      "group_id": "WM2",
+      "key_works": "XNGP World Model",
+      "x_handle": null,
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://www.xiaopeng.com/",
+      "verified": false,
+      "notes": "XPENG 在 X 上没有官方账号；中国车企主要在微博，可考虑 RSSHub weibo 路由"
+    },
+    {
+      "name": "Decart",
+      "group_id": "WM3",
+      "key_works": "Mirage, Oasis (real-time interactive Minecraft)",
+      "x_handle": "DecartAI",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": "Decart-AI",
+      "homepage": "https://www.decart.ai/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Odyssey",
+      "group_id": "WM3",
+      "key_works": "Odyssey, Odyssey-2 (interactive video)",
+      "x_handle": "odysseyml",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://odyssey.systems/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Runway · GWM",
+      "group_id": "WM3",
+      "key_works": "General World Model (GWM)",
+      "x_handle": "runwayml",
+      "blog_rss": null,
+      "github_org": "runwayml",
+      "huggingface_org": "runwayml",
+      "homepage": "https://runwayml.com/research",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "1X Technologies",
+      "group_id": "WM3",
+      "key_works": "1X World Model (humanoid)",
+      "x_handle": "1x_tech",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": "1x-technologies",
+      "homepage": "https://www.1x.tech/discover",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Niantic Spatial · LGM",
+      "group_id": "WM3",
+      "key_works": "Large Geospatial Model",
+      "x_handle": "NianticSpatial",
+      "blog_rss": null,
+      "github_org": "nianticlabs",
+      "huggingface_org": null,
+      "homepage": "https://www.nianticspatial.com/blog",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Tencent Hunyuan World",
+      "group_id": "WM3",
+      "key_works": "HunyuanWorld 1.0 (开源 3D 场景)",
+      "x_handle": "TencentHunyuan",
+      "blog_rss": null,
+      "github_org": "Tencent-Hunyuan",
+      "huggingface_org": "tencent",
+      "homepage": "https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    }
+  ]
+}

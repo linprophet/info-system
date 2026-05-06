@@ -1,0 +1,46 @@
+{
+  "$schema_version": "1.0",
+  "topic": "research-agi",
+  "title": "AGI Research · 周报聚合源（papers / lab blog / 研究 newsletter）",
+  "updated_at": "2026-05-04",
+  "description": "weekly_paper 的 aggregator 源（横跨 7 个 topic 主题）。本文件只列 aggregator；7 个 topic 的 lab 官方 blog 由 weekly_paper.sources_loader 自动从 topics/<topic>/orgs.json 的 verified.blog_rss 字段展开。",
+  "groups": [
+    {"id": "AGGREGATOR_PAPERS", "name": "Papers Aggregator（多 lab 横跨）"},
+    {"id": "AGGREGATOR_NEWSLETTER", "name": "Research Newsletter（人工精选/总结）"}
+  ],
+  "sources": [
+    {
+      "id": "hf-papers-weekly",
+      "name": "HuggingFace Papers (Weekly)",
+      "group_id": "AGGREGATOR_PAPERS",
+      "type": "hf-papers",
+      "tier": "S",
+      "lang": "en",
+      "homepage": "https://huggingface.co/papers",
+      "notes": "通过周页 /papers/week/<week-id> 的 SvelteKit SSR 数据抓取；按 upvotes 降序取 top 50",
+      "weight": 1.5
+    },
+    {
+      "id": "dair-ai-newsletter",
+      "name": "dair.ai · NLP Newsletter (Elvis Saravia)",
+      "group_id": "AGGREGATOR_NEWSLETTER",
+      "type": "newsletter",
+      "tier": "S",
+      "lang": "en",
+      "rss_url": "https://nlp.elvissaravia.com/feed",
+      "homepage": "https://nlp.elvissaravia.com/",
+      "notes": "X @dair_ai 同人，Substack 版本是周刊形式，覆盖 NLP / LLM / agent 论文摘要"
+    },
+    {
+      "id": "alphaxiv-trending",
+      "name": "alphaxiv · 7-day Trending",
+      "group_id": "AGGREGATOR_PAPERS",
+      "type": "alphaxiv",
+      "tier": "A",
+      "lang": "en",
+      "homepage": "https://www.alphaxiv.org/",
+      "notes": "Explore 页 = 默认 7-day trending；通过 RSC stream 内嵌的 trendingPapers 数组解析（weekly_paper.ingest.alphaxiv）。早于本周一的 trending paper 会 clamp 到周一。",
+      "weight": 1.2
+    }
+  ]
+}

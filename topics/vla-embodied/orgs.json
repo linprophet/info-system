@@ -1,0 +1,253 @@
+{
+  "$schema_version": "1.0",
+  "topic": "vla-embodied",
+  "title": "VLA & 具身智能 · 顶级机构订阅",
+  "updated_at": "2026-05-03",
+  "description": "三层格局：VLA Foundation Models / 人形机器人本体 / 学术 PI。2025-2026 是 robotic foundation model 的 OpenAI moment。",
+  "groups": [
+    {
+      "id": "VLA1",
+      "name": "VLA Foundation Models · 算法",
+      "subtitle": "PI / GR00T / Gemini Robotics / OpenVLA / LeRobot"
+    },
+    {
+      "id": "VLA2",
+      "name": "人形机器人本体 · 端到端 VLA + 硬件",
+      "subtitle": "Figure / 1X / Tesla / Apptronik / Unitree / AgiBot"
+    }
+  ],
+  "orgs": [
+    {
+      "name": "Physical Intelligence (PI)",
+      "group_id": "VLA1",
+      "key_works": "π0, π0.5, π0-FAST (flow-matching VLA)",
+      "x_handle": "physical_int",
+      "blog_rss": null,
+      "github_org": "Physical-Intelligence",
+      "huggingface_org": "physical-intelligence",
+      "homepage": "https://www.physicalintelligence.company/",
+      "verified": true,
+      "notes": "openpi 是核心 repo；学术 PI: Sergey Levine + Chelsea Finn 同时是 co-founder",
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "NVIDIA GEAR · GR00T",
+      "group_id": "VLA1",
+      "key_works": "GR00T N1 / N1.5 / N1.6 / N1.7 (humanoid generalist)",
+      "x_handle": "DrJimFan",
+      "blog_rss": null,
+      "github_org": "NVIDIA",
+      "huggingface_org": "nvidia",
+      "homepage": "https://research.nvidia.com/labs/gear/",
+      "verified": true,
+      "notes": "Isaac-GR00T repo + Cosmos 双产线",
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Google DeepMind Robotics",
+      "group_id": "VLA1",
+      "key_works": "Gemini Robotics 1.5, RT-1 / RT-2 / RT-X",
+      "x_handle": "GoogleDeepMind",
+      "blog_rss": "https://deepmind.google/blog/rss.xml",
+      "github_org": "google-deepmind",
+      "huggingface_org": "google",
+      "homepage": "https://deepmind.google/discover/blog/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Stanford / Berkeley · OpenVLA",
+      "group_id": "VLA1",
+      "key_works": "OpenVLA (7B Apache-2.0), OpenVLA-OFT",
+      "x_handle": null,
+      "blog_rss": null,
+      "github_org": "openvla",
+      "huggingface_org": "openvla",
+      "homepage": "https://openvla.github.io/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "UC Berkeley · Octo",
+      "group_id": "VLA1",
+      "key_works": "Octo (diffusion policy), Octo-Small",
+      "x_handle": null,
+      "blog_rss": null,
+      "github_org": "octo-models",
+      "huggingface_org": "rail-berkeley",
+      "homepage": "https://octo-models.github.io/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "HuggingFace · LeRobot",
+      "group_id": "VLA1",
+      "key_works": "LeRobot, SmolVLA (450M)",
+      "x_handle": "huggingface",
+      "blog_rss": "https://huggingface.co/blog/feed.xml",
+      "github_org": "huggingface",
+      "huggingface_org": "lerobot",
+      "homepage": "https://github.com/huggingface/lerobot",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Skild AI",
+      "group_id": "VLA1",
+      "key_works": "Omni-bodied robot brain ($14B 估值)",
+      "x_handle": "SkildAI",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://www.skild.ai/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Figure AI",
+      "group_id": "VLA2",
+      "key_works": "Helix (端到端 VLA), Figure 02 / 03",
+      "x_handle": "adcock_brett",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://www.figure.ai/news",
+      "verified": true,
+      "notes": "Brett Adcock CEO 推得多；Figure 官号 @figure_robot",
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "1X Technologies",
+      "group_id": "VLA2",
+      "key_works": "NEO + 1X World Model",
+      "x_handle": "1x_tech",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": "1x-technologies",
+      "homepage": "https://www.1x.tech/discover",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Tesla Optimus",
+      "group_id": "VLA2",
+      "key_works": "Optimus Gen 2 / 3",
+      "x_handle": "Tesla_Optimus",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://www.tesla.com/we-robot",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Apptronik",
+      "group_id": "VLA2",
+      "key_works": "Apollo (与 Google DM 合作 Gemini Robotics)",
+      "x_handle": "Apptronik",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://apptronik.com/news-collection",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Agility Robotics",
+      "group_id": "VLA2",
+      "key_works": "Digit (商业部署中)",
+      "x_handle": "Agility_Robotics",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://www.agilityrobotics.com/news",
+      "verified": false,
+      "verify_notes": "auto-verified 2026-05-03; failed: X (404)"
+    },
+    {
+      "name": "Boston Dynamics + AI Institute",
+      "group_id": "VLA2",
+      "key_works": "Atlas (electric), AI Institute Spot",
+      "x_handle": "BostonDynamics",
+      "blog_rss": null,
+      "github_org": "boston-dynamics-ai-institute",
+      "huggingface_org": null,
+      "homepage": "https://bostondynamics.com/blog/",
+      "verified": false,
+      "verify_notes": "auto-verified 2026-05-03; failed: GitHub atom (404)"
+    },
+    {
+      "name": "Sanctuary AI",
+      "group_id": "VLA2",
+      "key_works": "Phoenix + Carbon™ AI",
+      "x_handle": "TheSanctuaryAI",
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://sanctuary.ai/news/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Unitree Robotics",
+      "group_id": "VLA2",
+      "key_works": "G1 / H1 / H2 humanoid",
+      "x_handle": "UnitreeRobotics",
+      "blog_rss": null,
+      "github_org": "unitreerobotics",
+      "huggingface_org": "unitreerobotics",
+      "homepage": "https://www.unitree.com/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "AgiBot 智元",
+      "group_id": "VLA2",
+      "key_works": "Genie-1, GO-1 (开源 VLA)",
+      "x_handle": "AgiBotGlobal",
+      "blog_rss": null,
+      "github_org": "OpenDriveLab",
+      "huggingface_org": "agibot-world",
+      "homepage": "https://www.agibot.com/",
+      "verified": false,
+      "verify_notes": "auto-verified 2026-05-03; failed: X (404)"
+    },
+    {
+      "name": "Galaxea AI",
+      "group_id": "VLA2",
+      "key_works": "Galaxea G1 / R1",
+      "x_handle": null,
+      "blog_rss": null,
+      "github_org": "Galaxea-AI",
+      "huggingface_org": null,
+      "homepage": "https://galaxea.ai/",
+      "verified": true,
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "Galbot 银河通用",
+      "group_id": "VLA2",
+      "key_works": "Galbot G1, GraspVLA",
+      "x_handle": null,
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://www.galbot.com/",
+      "verified": false,
+      "notes": "He Wang 王鹤 (PKU) 是 founder，可单独作为 scholar 跟",
+      "verify_notes": "auto-verified 2026-05-03; all sources reachable"
+    },
+    {
+      "name": "XPENG Robotics",
+      "group_id": "VLA2",
+      "key_works": "XPENG Iron",
+      "x_handle": null,
+      "blog_rss": null,
+      "github_org": null,
+      "huggingface_org": null,
+      "homepage": "https://www.xiaopeng.com/",
+      "verified": false,
+      "verify_notes": "auto-verified 2026-05-03; failed: X (404)"
+    }
+  ]
+}

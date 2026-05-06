@@ -1,0 +1,762 @@
+{
+  "$schema_version": "1.0",
+  "topic": "image-generation",
+  "title": "图片生成 · Scholar Follow 60 人清单",
+  "updated_at": "2026-05-03",
+  "source_canvas": "image-generation-scholars.canvas.tsx",
+  "rss": {
+    "instance": "https://rsshub.app",
+    "self_host_recommended": true,
+    "scholar_template": "{instance}/google/citations/{scholar_id}",
+    "x_template": "{instance}/twitter/user/{x_handle}",
+    "alt_x_template": "{instance}/twitter/user/{x_handle}?excludeReplies=1&includeRts=0",
+    "x_handle_lower": true,
+    "scholar_html_template": "https://scholar.google.com/citations?user={scholar_id}&hl=en",
+    "x_html_template": "https://x.com/{x_handle}",
+    "notes": [
+      "RSSHub 公共实例 https://rsshub.app 经常被限速，生产环境建议自建：docker run -d --name rsshub -p 1200:1200 diygod/rsshub",
+      "Twitter/X 路由依赖账号 cookie：自建时设置 TWITTER_AUTH_TOKEN env",
+      "Google Scholar Citations 路由 /google/citations/{id} 在公共实例可直接用，无需 token",
+      "如果 X 持续无法用 RSS，可改用 https://nitter.privacydev.net/{handle}/rss 或付费转换器 rss.app / inoreader",
+      "字段为 null 表示未确认；查询 hint：用 search_url_scholar / search_url_x 字段中的 Google 搜索链接"
+    ]
+  },
+  "stats_target": {
+    "total": 60,
+    "groups": 10
+  },
+  "groups": [
+    {
+      "id": "G1",
+      "name": "Black Forest Labs / CompVis",
+      "subtitle": "LDM 创始者；今天所有 latent diffusion 工作的祖师组",
+      "tone": "founders"
+    },
+    {
+      "id": "G2",
+      "name": "OpenAI 视觉生成",
+      "subtitle": "DALL-E / Sora / GPT-4o Image 路线，把图像生成接进 LLM 主路径",
+      "tone": "frontier"
+    },
+    {
+      "id": "G3",
+      "name": "DiT 学术线 / 扩散理论",
+      "subtitle": "NYU · Stanford · 清华，决定了 DiT 怎么训才高效",
+      "tone": "theory"
+    },
+    {
+      "id": "G4",
+      "name": "Google DeepMind 视觉生成",
+      "subtitle": "Imagen / Veo / Nano Banana，DDPM 的传承者",
+      "tone": "frontier"
+    },
+    {
+      "id": "G5",
+      "name": "NVIDIA / MIT 数学工程派",
+      "subtitle": "EDM / StyleGAN / DC-AE，干净的数学 + 极致的工程",
+      "tone": "engineering"
+    },
+    {
+      "id": "G6",
+      "name": "Flow Matching / Rectified Flow",
+      "subtitle": "数学新方向，催生 SD3 / FLUX / Movie Gen 训练范式",
+      "tone": "theory"
+    },
+    {
+      "id": "G7",
+      "name": "自回归 / Tokenizer / Unified MM",
+      "subtitle": "VAR / MagVit / Show-o，押注图像生成 = LLM token",
+      "tone": "ar"
+    },
+    {
+      "id": "G8",
+      "name": "中国 Frontier Labs 视觉负责人",
+      "subtitle": "BD / Ali / Tencent / Kuaishou / Zhipu / Tsinghua，开源 SOTA 主要来源",
+      "tone": "china"
+    },
+    {
+      "id": "G9",
+      "name": "编辑 / 控制 / 个性化",
+      "subtitle": "ControlNet / IP-Adapter / 以色列学派，让模型真正能用",
+      "tone": "control"
+    },
+    {
+      "id": "G10",
+      "name": "评测 / 数据 / 开源生态",
+      "subtitle": "VBench / LAION / Diffusers，行业基础设施",
+      "tone": "infra"
+    }
+  ],
+  "scholars": [
+    {
+      "name": "Robin Rombach",
+      "group_id": "G1",
+      "affiliation": "Black Forest Labs (CEO)",
+      "key_works": "LDM, SDXL, SD3, FLUX.1/2",
+      "scholar_id": "ygdQhrIAAAAJ",
+      "x_handle": null,
+      "github": "rromb",
+      "homepage": null,
+      "verified": true
+    },
+    {
+      "name": "Andreas Blattmann",
+      "group_id": "G1",
+      "affiliation": "Black Forest Labs (CTO)",
+      "key_works": "LDM, Stable Video Diffusion, FLUX",
+      "scholar_id": null,
+      "x_handle": "andi_blatt",
+      "github": "ablattmann",
+      "homepage": null,
+      "verified": true
+    },
+    {
+      "name": "Patrick Esser",
+      "group_id": "G1",
+      "affiliation": "Black Forest Labs",
+      "key_works": "VQGAN, SD3 / MMDiT (一作), FLUX",
+      "scholar_id": null,
+      "x_handle": "pessr",
+      "github": "pesser",
+      "homepage": null,
+      "verified": false,
+      "notes": "x_handle 为推断，可能不准；建议在 https://x.com/search?q=Patrick%20Esser%20Black%20Forest 验证"
+    },
+    {
+      "name": "Dominik Lorenz",
+      "group_id": "G1",
+      "affiliation": "Black Forest Labs",
+      "key_works": "LDM 早期, FLUX 数据/训练",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": null,
+      "verified": false
+    },
+    {
+      "name": "Axel Sauer",
+      "group_id": "G1",
+      "affiliation": "Black Forest Labs (ex-NVIDIA)",
+      "key_works": "StyleGAN-T, ADD, Distillation",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://axelsauer.com/",
+      "verified": false
+    },
+    {
+      "name": "Björn Ommer",
+      "group_id": "G1",
+      "affiliation": "LMU Munich (Professor / advisor)",
+      "key_works": "整支 BFL 团队的导师, Computer Vision & Learning Lab",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://ommer-lab.com/",
+      "verified": false
+    },
+    {
+      "name": "William (Bill) Peebles",
+      "group_id": "G2",
+      "affiliation": "OpenAI (Head of Sora)",
+      "key_works": "DiT (ICCV'23), Sora",
+      "scholar_id": null,
+      "x_handle": "billpeeb",
+      "github": "wpeebles",
+      "homepage": "https://www.wpeebles.com/",
+      "verified": true
+    },
+    {
+      "name": "Tim Brooks",
+      "group_id": "G2",
+      "affiliation": "Google DeepMind (ex-OpenAI Sora co-lead)",
+      "key_works": "InstructPix2Pix, Sora",
+      "scholar_id": null,
+      "x_handle": "_tim_brooks",
+      "github": "timothybrooks",
+      "homepage": "https://www.timothybrooks.com/",
+      "verified": false,
+      "notes": "X handle 高置信度但本会话未单独验证"
+    },
+    {
+      "name": "Aditya Ramesh",
+      "group_id": "G2",
+      "affiliation": "Halcyon (创业, ex-OpenAI)",
+      "key_works": "DALL-E 1/2/3",
+      "scholar_id": null,
+      "x_handle": "model_mechanic",
+      "github": null,
+      "homepage": "http://adityaramesh.com/",
+      "verified": false
+    },
+    {
+      "name": "Prafulla Dhariwal",
+      "group_id": "G2",
+      "affiliation": "OpenAI",
+      "key_works": "ADM (Diffusion beats GAN), GLIDE, Consistency Models",
+      "scholar_id": null,
+      "x_handle": "prafdhar",
+      "github": "prafullasd",
+      "homepage": null,
+      "verified": false
+    },
+    {
+      "name": "Alex Nichol",
+      "group_id": "G2",
+      "affiliation": "OpenAI",
+      "key_works": "GLIDE, Point-E, Shap-E, Improved DDPM",
+      "scholar_id": null,
+      "x_handle": "unixpickle",
+      "github": "unixpickle",
+      "homepage": "https://aqnichol.com/",
+      "verified": false
+    },
+    {
+      "name": "James Betker",
+      "group_id": "G2",
+      "affiliation": "OpenAI",
+      "key_works": "DALL-E 3 系统作者, Tortoise TTS",
+      "scholar_id": null,
+      "x_handle": "jbetker",
+      "github": "neonbjb",
+      "homepage": "https://nonint.com/",
+      "verified": false
+    },
+    {
+      "name": "Saining Xie",
+      "group_id": "G3",
+      "affiliation": "NYU (Assistant Professor) / AMI Labs (CSO)",
+      "key_works": "DiT, SiT, REPA, ConvNeXt",
+      "scholar_id": "Y2GtJkAAAAAJ",
+      "x_handle": "sainingxie",
+      "github": "s9xie",
+      "homepage": "https://www.sainingxie.com/",
+      "verified": true
+    },
+    {
+      "name": "Sihyun Yu",
+      "group_id": "G3",
+      "affiliation": "KAIST → Tesla / xAI",
+      "key_works": "REPA (ICLR'25 Oral)",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": "sihyun-yu",
+      "homepage": "https://sihyun.me/",
+      "verified": false
+    },
+    {
+      "name": "Yang Song",
+      "group_id": "G3",
+      "affiliation": "Meta Superintelligence Labs (ex-OpenAI 2022-2025)",
+      "key_works": "Score-based Diffusion (NeurIPS'21 Best), Consistency Models",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": "yang-song",
+      "homepage": "https://yang-song.net/",
+      "verified": true,
+      "notes": "2025 从 OpenAI 转 Meta Superintelligence Labs"
+    },
+    {
+      "name": "Stefano Ermon",
+      "group_id": "G3",
+      "affiliation": "Stanford (Associate Professor)",
+      "key_works": "DDIM, Score Matching 系列, CS236 Deep Generative Models",
+      "scholar_id": "ogXTOZ4AAAAJ",
+      "x_handle": "stefanoermon",
+      "github": null,
+      "homepage": "https://cs.stanford.edu/~ermon/",
+      "verified": true,
+      "notes": "x_handle 为推断"
+    },
+    {
+      "name": "Jiaming Song",
+      "group_id": "G3",
+      "affiliation": "Luma AI (ex-Stanford / NVIDIA)",
+      "key_works": "DDIM (一作), DPM-Solver-v3",
+      "scholar_id": null,
+      "x_handle": "baaadas",
+      "github": "jiamings",
+      "homepage": "https://tsong.me/",
+      "verified": false
+    },
+    {
+      "name": "Cheng Lu",
+      "group_id": "G3",
+      "affiliation": "OpenAI (ex-Tsinghua TSAIL)",
+      "key_works": "DPM-Solver 1/2/3",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": "LuChengTHU",
+      "homepage": "https://luchengthu.github.io/",
+      "verified": false
+    },
+    {
+      "name": "Yilun Xu",
+      "group_id": "G3",
+      "affiliation": "NVIDIA Research",
+      "key_works": "Stochastic Interpolants, RFM, Poisson Flow",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": "Newbeeer",
+      "homepage": "https://yilun-xu.com/",
+      "verified": false
+    },
+    {
+      "name": "Chitwan Saharia",
+      "group_id": "G4",
+      "affiliation": "Google DeepMind",
+      "key_works": "Imagen, Imagen 2/3, Palette",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": null,
+      "verified": false
+    },
+    {
+      "name": "Mohammad Norouzi",
+      "group_id": "G4",
+      "affiliation": "Ideogram (Co-founder, ex-Google Brain)",
+      "key_works": "Imagen, SR3",
+      "scholar_id": null,
+      "x_handle": "mo_norouzi",
+      "github": null,
+      "homepage": "https://norouzi.github.io/",
+      "verified": false
+    },
+    {
+      "name": "William Chan",
+      "group_id": "G4",
+      "affiliation": "Google DeepMind",
+      "key_works": "Imagen, Parti, Listen Attend Spell",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "http://williamchan.ca/",
+      "verified": false
+    },
+    {
+      "name": "Jonathan Ho",
+      "group_id": "G4",
+      "affiliation": "Google Research / DeepMind",
+      "key_works": "DDPM, Classifier-Free Guidance, Cascaded Diffusion",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": "hojonathanho",
+      "homepage": "https://hojonathanho.github.io/",
+      "verified": false
+    },
+    {
+      "name": "Tim Salimans",
+      "group_id": "G4",
+      "affiliation": "Google DeepMind",
+      "key_works": "Progressive Distillation, GAN, Improved GAN",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": null,
+      "verified": false
+    },
+    {
+      "name": "Tero Karras",
+      "group_id": "G5",
+      "affiliation": "NVIDIA Research (Senior Distinguished Research Scientist)",
+      "key_works": "StyleGAN 1/2/3, EDM, EDM2",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://research.nvidia.com/person/tero-karras",
+      "verified": true,
+      "notes": "Karras 不上 X，重点订阅 NVIDIA Research 主页 / arXiv author feed"
+    },
+    {
+      "name": "Karsten Kreis",
+      "group_id": "G5",
+      "affiliation": "NVIDIA Research",
+      "key_works": "LSGM, eDiff-I, Magic3D",
+      "scholar_id": null,
+      "x_handle": "karsten_kreis",
+      "github": null,
+      "homepage": "https://karstenkreis.github.io/",
+      "verified": false
+    },
+    {
+      "name": "Ming-Yu Liu",
+      "group_id": "G5",
+      "affiliation": "NVIDIA Research (VP, Generative AI)",
+      "key_works": "Pix2PixHD, Cosmos, eDiff-I, GauGAN",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://mingyuliu.net/",
+      "verified": false
+    },
+    {
+      "name": "Diederik P. Kingma",
+      "group_id": "G5",
+      "affiliation": "Anthropic (ex-OpenAI / Google)",
+      "key_works": "VAE, Adam, VDM, CIFM",
+      "scholar_id": null,
+      "x_handle": "dpkingma",
+      "github": "dpkingma",
+      "homepage": "http://dpkingma.com/",
+      "verified": false
+    },
+    {
+      "name": "Song Han",
+      "group_id": "G5",
+      "affiliation": "MIT / NVIDIA",
+      "key_works": "EfficientViT, DC-AE, SVD-LLM, Deep Compression",
+      "scholar_id": null,
+      "x_handle": "songhan_mit",
+      "github": "songhan",
+      "homepage": "https://hanlab.mit.edu/songhan",
+      "verified": false
+    },
+    {
+      "name": "Han Cai",
+      "group_id": "G5",
+      "affiliation": "MIT (Song Han 组) / NVIDIA",
+      "key_works": "DC-AE, EfficientViT-DiT, SANA, OFA",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": "han-cai",
+      "homepage": "https://han-cai.github.io/",
+      "verified": false
+    },
+    {
+      "name": "Yaron Lipman",
+      "group_id": "G6",
+      "affiliation": "Meta FAIR (Research Scientist, Tel Aviv)",
+      "key_works": "Flow Matching, CIFM, Riemannian FM",
+      "scholar_id": "vyteiT4AAAAJ",
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://www.weizmann.ac.il/math/lipman/",
+      "verified": true
+    },
+    {
+      "name": "Ricky T. Q. Chen",
+      "group_id": "G6",
+      "affiliation": "Meta FAIR",
+      "key_works": "Neural ODE, FFJORD, Flow Matching",
+      "scholar_id": null,
+      "x_handle": "RickyTQC",
+      "github": "rtqichen",
+      "homepage": "https://rtqichen.com/",
+      "verified": false
+    },
+    {
+      "name": "Qiang Liu",
+      "group_id": "G6",
+      "affiliation": "UT Austin (Professor)",
+      "key_works": "Rectified Flow, Stein Variational Gradient",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://www.cs.utexas.edu/~lqiang/",
+      "verified": false
+    },
+    {
+      "name": "Michael Albergo",
+      "group_id": "G6",
+      "affiliation": "NYU (ex-Flatiron)",
+      "key_works": "Stochastic Interpolants",
+      "scholar_id": null,
+      "x_handle": "msalbergo",
+      "github": null,
+      "homepage": "https://malbergo.me/",
+      "verified": false
+    },
+    {
+      "name": "Keyu Tian",
+      "group_id": "G7",
+      "affiliation": "ByteDance Seed / 北京大学",
+      "key_works": "VAR (NeurIPS'24 Best Paper)",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": "keyu-tian",
+      "homepage": null,
+      "verified": false
+    },
+    {
+      "name": "Yi Jiang",
+      "group_id": "G7",
+      "affiliation": "ByteDance Seed",
+      "key_works": "VAR, Seedream, MGM",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": null,
+      "verified": false
+    },
+    {
+      "name": "Zehuan Yuan",
+      "group_id": "G7",
+      "affiliation": "ByteDance Seed (vision lead)",
+      "key_works": "VAR, Seedream, Goku",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": null,
+      "verified": false
+    },
+    {
+      "name": "Lijun Yu",
+      "group_id": "G7",
+      "affiliation": "Google DeepMind (ex-CMU)",
+      "key_works": "MagVit, MagVit2",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://me.lj-y.com/",
+      "verified": false
+    },
+    {
+      "name": "Xihui Liu",
+      "group_id": "G7",
+      "affiliation": "HKU MMLab (Assistant Professor)",
+      "key_works": "Show-o, Show-o2",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://xh-liu.github.io/",
+      "verified": false
+    },
+    {
+      "name": "Mike Zheng Shou",
+      "group_id": "G7",
+      "affiliation": "NUS Show Lab (Assistant Professor)",
+      "key_works": "Show-o, AnyV2V, MotionDirector",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://sites.google.com/view/showlab",
+      "verified": false
+    },
+    {
+      "name": "Liwei Wang",
+      "group_id": "G7",
+      "affiliation": "Peking University (Professor)",
+      "key_works": "VAR (理论), 多篇 NeurIPS Oral",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://www.cis.pku.edu.cn/info/1084/1635.htm",
+      "verified": false
+    },
+    {
+      "name": "Lu Jiang",
+      "group_id": "G8",
+      "affiliation": "ByteDance Seed (vision lead)",
+      "key_works": "Seedream / Seedance 系列, MGM",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "http://www.lujiang.info/",
+      "verified": false
+    },
+    {
+      "name": "Yu Liu",
+      "group_id": "G8",
+      "affiliation": "ByteDance (vision)",
+      "key_works": "VLM、生成多领域协同",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": null,
+      "verified": false,
+      "notes": "重名较多，建议结合具体论文确认"
+    },
+    {
+      "name": "Junyang Lin",
+      "group_id": "G8",
+      "affiliation": "Alibaba Qwen Team (core maintainer)",
+      "key_works": "Qwen-VL, Qwen-Image, Qwen2.5-VL, Qwen3",
+      "scholar_id": null,
+      "x_handle": "JustinLin610",
+      "github": "JustinLin610",
+      "homepage": "https://justinlin610.github.io/",
+      "verified": true
+    },
+    {
+      "name": "Chunyuan Li",
+      "group_id": "G8",
+      "affiliation": "xAI (ex-MS Research)",
+      "key_works": "LLaVA 系列, Visual Instruction Tuning",
+      "scholar_id": "Zd7WmXUAAAAJ",
+      "x_handle": "ChunyuanLi",
+      "github": "Computer-Vision-in-the-Wild",
+      "homepage": "https://chunyuan.li/",
+      "verified": true,
+      "notes": "原 canvas 误把 Janus 归在他名下；Janus 实为 DeepSeek-AI 出品"
+    },
+    {
+      "name": "Pengfei Wan",
+      "group_id": "G8",
+      "affiliation": "Kuaishou Kling Team",
+      "key_works": "Kling, Kolors",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": null,
+      "verified": false
+    },
+    {
+      "name": "Yi Yang",
+      "group_id": "G8",
+      "affiliation": "Tencent Hunyuan (vision)",
+      "key_works": "HunyuanImage 2.1, HunyuanDiT, HunyuanVideo",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": null,
+      "verified": false,
+      "notes": "Yi Yang 在国内是常见名，注意区分浙大 ReLER 组的 Yi Yang"
+    },
+    {
+      "name": "Ming Ding",
+      "group_id": "G8",
+      "affiliation": "Zhipu AI / 清华唐杰组",
+      "key_works": "CogView 1/2/3/4, CogVideoX",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": null,
+      "verified": false
+    },
+    {
+      "name": "Jun Zhu",
+      "group_id": "G8",
+      "affiliation": "Tsinghua TSAIL (Bosch AI Professor)",
+      "key_works": "DPM-Solver, U-ViT, Analytic-DPM (ICLR'22 Outstanding)",
+      "scholar_id": "kUAtbFkAAAAJ",
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://ml.cs.tsinghua.edu.cn/~jun/",
+      "verified": true
+    },
+    {
+      "name": "Fan Bao",
+      "group_id": "G8",
+      "affiliation": "ShengShu (创业, ex-Tsinghua TSAIL)",
+      "key_works": "U-ViT, UniDiffuser, Vidu",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://baofff.github.io/",
+      "verified": false
+    },
+    {
+      "name": "Lvmin Zhang",
+      "group_id": "G9",
+      "affiliation": "Stanford (PhD, Maneesh Agrawala 组)",
+      "key_works": "ControlNet, Fooocus, Forge, IC-Light, FramePack",
+      "scholar_id": "ANMsdHYAAAAJ",
+      "x_handle": null,
+      "github": "lllyasviel",
+      "homepage": "https://lllyasviel.github.io/lvmin_zhang/",
+      "verified": true,
+      "notes": "GitHub 比 X 更值得 follow（产出在 lllyasviel/* repos）"
+    },
+    {
+      "name": "Maneesh Agrawala",
+      "group_id": "G9",
+      "affiliation": "Stanford (Professor)",
+      "key_works": "ControlNet 系列指导, video editing",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": "https://graphics.stanford.edu/~maneesh/",
+      "verified": false
+    },
+    {
+      "name": "Hu Ye",
+      "group_id": "G9",
+      "affiliation": "Tencent",
+      "key_works": "IP-Adapter, InstantID 共著",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": "tencent-ailab",
+      "homepage": null,
+      "verified": false
+    },
+    {
+      "name": "Rinon Gal",
+      "group_id": "G9",
+      "affiliation": "Tel Aviv U / NVIDIA",
+      "key_works": "Textual Inversion, Designing an Encoder for Personalization",
+      "scholar_id": null,
+      "x_handle": "rinon_gal",
+      "github": "rinongal",
+      "homepage": "https://rinongal.github.io/",
+      "verified": false
+    },
+    {
+      "name": "Ron Mokady",
+      "group_id": "G9",
+      "affiliation": "Bria AI (ex-Tel Aviv U)",
+      "key_works": "Prompt-to-Prompt, Imagic, Null-text Inversion",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": null,
+      "homepage": null,
+      "verified": false
+    },
+    {
+      "name": "Or Patashnik",
+      "group_id": "G9",
+      "affiliation": "Tel Aviv U",
+      "key_works": "StyleCLIP, MyStyle, Cross-image Attention",
+      "scholar_id": null,
+      "x_handle": "OrPatashnik",
+      "github": null,
+      "homepage": "https://orpatashnik.github.io/",
+      "verified": false
+    },
+    {
+      "name": "Ziwei Liu",
+      "group_id": "G10",
+      "affiliation": "NTU Singapore (Associate Professor, MMLab)",
+      "key_works": "VBench, EvalCrafter, MMVet, GenAI",
+      "scholar_id": "lc45xlcAAAAJ",
+      "x_handle": "liu_ziwei",
+      "github": "liuziwei7",
+      "homepage": "https://liuziwei7.github.io/",
+      "verified": true
+    },
+    {
+      "name": "Christoph Schuhmann",
+      "group_id": "G10",
+      "affiliation": "LAION (Co-founder)",
+      "key_works": "LAION-5B, LAION-Aesthetics",
+      "scholar_id": null,
+      "x_handle": "laion_ai",
+      "github": null,
+      "homepage": "https://laion.ai/",
+      "verified": false,
+      "notes": "他个人 X 不活跃，建议改 follow @laion_ai 组织账号"
+    },
+    {
+      "name": "Sayak Paul",
+      "group_id": "G10",
+      "affiliation": "Hugging Face",
+      "key_works": "Diffusers core maintainer, 系列教程",
+      "scholar_id": null,
+      "x_handle": "RisingSayak",
+      "github": "sayakpaul",
+      "homepage": "https://sayak.dev/",
+      "verified": false
+    },
+    {
+      "name": "Romain Beaumont",
+      "group_id": "G10",
+      "affiliation": "Hugging Face / LAION",
+      "key_works": "OpenCLIP, img2dataset, CLIP retrieval",
+      "scholar_id": null,
+      "x_handle": null,
+      "github": "rom1504",
+      "homepage": null,
+      "verified": false
+    }
+  ]
+}
