@@ -53,7 +53,9 @@
       "tier": "S",
       "lang": "en",
       "rss_url": "https://semianalysis.com/feed/",
-      "homepage": "https://semianalysis.com/"
+      "homepage": "https://semianalysis.com/",
+      "disabled": true,
+      "notes": "RSS 自 2025-09 停更（feed 仅返回历史归档）；正文已迁移付费墙，需要单独处理"
     },
     {
       "id": "platformer",
@@ -198,7 +200,9 @@
       "tier": "S",
       "lang": "en",
       "youtube_handle": "CognitiveRevolutionPodcast",
-      "homepage": "https://www.youtube.com/@CognitiveRevolutionPodcast"
+      "youtube_channel_id": "UCjNRVMBVI30Sak_p6HRWhIA",
+      "homepage": "https://www.youtube.com/@CognitiveRevolutionPodcast",
+      "notes": "channel_id 显式 pin（早期 resolver 把 cached id 误指到 'Upstream w/ Erik Torenberg'）"
     },
     {
       "id": "bg2pod",
@@ -239,8 +243,10 @@
       "type": "youtube",
       "tier": "A",
       "lang": "en",
-      "youtube_handle": "decoder",
-      "homepage": "https://www.theverge.com/decoder-podcast-with-nilay-patel"
+      "youtube_handle": "DecoderPod",
+      "youtube_channel_id": "UCYRwJnCWfBqFHEHrgc18FFw",
+      "homepage": "https://www.youtube.com/@DecoderPod/videos",
+      "notes": "@decoder handle 被罗马尼亚频道占用，正确 handle 是 @DecoderPod；channel_id 显式 pin"
     },
     {
       "id": "lex-fridman",
@@ -446,7 +452,8 @@
       "lang": "en",
       "rss_url": "https://syncedreview.com/feed/",
       "homepage": "https://syncedreview.com/",
-      "notes": "机器之心英文版（中文站无 RSS）；偏论文播报"
+      "disabled": true,
+      "notes": "RSS 自 2025-08 停更；机器之心英文版已基本不再更新"
     },
 
     {
@@ -458,7 +465,8 @@
       "lang": "zh",
       "rss_url": "https://feed.xyzfm.space/xxg7ryklkkft",
       "homepage": "https://podcasts.apple.com/us/podcast/onboard/id1613083252",
-      "notes": "硅谷 VC + 创业者深度对谈，AGI / coding agent / 一线 builder 含量极高"
+      "disabled": true,
+      "notes": "feed.xyzfm.space RSS 自 2025-07 停更；OnBoard 主阵地已迁移至小宇宙/Apple Podcasts，需新 RSS 源（自建 RSSHub 或第三方镜像）"
     },
     {
       "id": "latetalk",
@@ -480,7 +488,8 @@
       "lang": "zh",
       "rss_url": "https://feed.xyzfm.space/ayrmwhxwgy6q",
       "homepage": "https://podcasts.apple.com/cn/podcast/%E6%99%9A%E7%82%B9%E5%9C%A8%E5%9C%BA/id1827801264",
-      "notes": "晚点新栏目，更偏现场报道"
+      "disabled": true,
+      "notes": "feed.xyzfm.space RSS 自 2025-08 停更；晚点在场目前主要走小宇宙/Apple，需新 RSS 源"
     },
     {
       "id": "42zhang-jing",

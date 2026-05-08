@@ -381,13 +381,13 @@ curl -s "https://itunes.apple.com/lookup?id=1613083252" | python3 -c "import sys
 
 ## 当前源清单（截至 2026-W19）
 
-### `weekly_report` 源（49 个，46 active + 3 disabled）
+### `weekly_report` 源（49 个，42 active + 7 disabled）
 
 ```
-EN_NEWSLETTER (15)  Stratechery, Import AI, Interconnects, SemiAnalysis, Platformer,
-                    Newcomer, One Useful Thing, AI Snake Oil, Pragmatic Engineer,
-                    Lenny's Newsletter, Latent Space, Dwarkesh Substack, Big Technology,
-                    ChinaTalk, Synced Review
+EN_NEWSLETTER (13)  Stratechery, Import AI, Interconnects, Platformer, Newcomer,
+                    One Useful Thing, AI Snake Oil, Pragmatic Engineer, Lenny's Newsletter,
+                    Latent Space, Dwarkesh Substack, Big Technology, ChinaTalk
+                    [disabled: SemiAnalysis (RSS 停更，正文付费墙), Synced Review (停更)]
 
 EN_YT_PODCAST (13)  Dwarkesh Patel, No Priors, Unsupervised Learning, Cognitive Revolution,
                     BG2 Pod, Acquired, Hard Fork, Decoder, Lex Fridman, a16z Podcast,
@@ -400,12 +400,18 @@ EN_LAB_OFFICIAL (10) Anthropic YT, Google DeepMind YT, Y Combinator YT, Sequoia 
 
 CN_NEWSLETTER (1)   极客公园
 
-CN_PODCAST (5)      OnBoard! (Monica), 晚点聊 LateTalk, 晚点在场, 42章经, 硅谷101
+CN_PODCAST (3)      晚点聊 LateTalk, 42章经, 硅谷101
+                    [disabled: OnBoard! (xyzfm RSS 自 2025-07 停更), 晚点在场 (同上)]
 
 CN_YT_PODCAST (2)   张小珺, WhyNotTV
 
 CN_RSSHUB (3,disabled) 海外独角兽, Founder Park, 远川研究所  (需自建 RSSHub)
 ```
+
+> **YouTube handle 解析陷阱**：YouTube handle 不唯一，普通词被抢注的情况很常见
+> （e.g. `@decoder` 被罗马尼亚频道占用，正确的是 `@DecoderPod`）。S/A 级源建议
+> **同时显式指定 `youtube_channel_id`**（在源 JSON 里 pin 死），避免 resolver 抓错；
+> 一旦 `state.youtube_channel_id` 被错误缓存，必须手动清空。
 
 ### `weekly_paper` 源（9 active）
 
