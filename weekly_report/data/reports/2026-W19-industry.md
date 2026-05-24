@@ -1,64 +1,66 @@
 # Weekly Industry Report · 2026-W19
 
-_16 items kept across 12 sources · window 2026-05-04 → 2026-05-11_
+_26 items kept across 13 sources · window 2026-05-04 → 2026-05-11_
 
 ## 🔥 30 秒 TL;DR
 
-- **Anthropic 宣布与 Blackstone、Hellman & Friedman、Goldman Sachs 成立 $1.5B 企业服务合资公司，OpenAI 同期成立 The Deployment Company**，模型公司从 API 层向服务层延伸，追求“最后一公里”收入与差异化数据。（[AINews](https://www.latent.space/p/ainews-silicon-valley-gets-serious)）
-- **OpenAI 扩展 ChatGPT 广告业务**，推出自助 Ads Manager、CPC 竞价与改进后的效果衡量，搜索/广告变现进一步加速，直接面对 Google 既有领地。（[OpenAI News](https://openai.com/index/new-ways-to-buy-chatgpt-ads)）
-- **Recursive Superintelligence 获 GV 和英伟达 5 亿美元融资，估值 40 亿**，产品尚未公开即获巨额押注，其目标“让 AI 自己做研究”可能改写科研范式。（[极客公园](http://www.geekpark.net/news/363719)）
-- **微软财报揭晓 agentic 新商业模式，Google 因 AI 变现与 Anthropic 合作受追捧，Meta 核心业务更强却遭冷遇**——科技巨头 AI 投资回报路径两极分化。（[Stratechery 1](https://stratechery.com/2026/microsoft-earnings-apple-earnings/) / [Stratechery 2](https://stratechery.com/2026/google-earnings-meta-earnings/)）
-- **特朗普政府 AI 政策大转弯**：从副总统万斯抨击“安全担忧阻碍创新”，到白宫开始采纳“AI 末日论”的规制逻辑，政策钟摆剧烈回摆。（[Platformer](https://www.platformer.news/trump-administration-doomers-ai/)）
+- **Anthropic 与 SpaceX/xAI 达成约 $5B/年的 Colossus I 算力交易**，xAI 转型为 neocloud，同时 Anthropic 开发者大会发布 Claude Managed Agents 三大新功能。([Latent Space](https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr), [Platformer](https://www.platformer.news/did-xai-just-concede-the-ai-race/))
+- **Anthropic 估值飙至 $1-1.2T**，年化收入增长 80 倍，超越 OpenAI 成为全球第 11-15 大市值公司；同期 Block、Coinbase、Cloudflare 裁员超 10%。([Latent Space](https://www.latent.space/p/ainews-anthropic-growing-10xyear))
+- **SpaceX 提议投资 $550 亿在得州建设芯片制造设施 Terafab**，总资本支出可能达 $1190 亿，为特斯拉、xAI 自供芯片。([极客公园](http://www.geekpark.net/news/363854))
+- **月之暗面 Kimi 完成 $20 亿新融资，估值破 $200 亿**，美团龙珠领投，不到半年累计融资超 $39 亿，成中国大模型创业公司累计融资最多。([极客公园](http://www.geekpark.net/news/363775))
+- **Sierra 以 $158 亿估值完成 $9.5 亿融资**（Tiger Global、GV 领投），CEO Bret Taylor 称其客服 AI 代理已互相通话。([Newcomer](https://www.newcomer.co/p/customer-support-and-dictation-loom))
 
 ## 📂 主题深度
 
-### 🤝 商业大事件 & 战略 / Major Deals & Strategy
+### 🤝 商业大事件 / Major Deals & Strategy
 
-**为什么本周值得看**：模型公司同时启动“服务化”合资——Anthropic 拉上 Blackstone 等金融机构，OpenAI 成立专门的 deployment 公司，这意味着 AI 行业的价值争夺正从模型能力前移到企业部署与持续服务。与此同时，Uber CEO 大谈用 AI 替代司机与自身角色，SaaS 时代的免费增值逻辑在 AI 产品中正式宣告失效。战略思考的尺度正在迅速拉大。
+**为什么本周值得看**: 本周最核心的主题是"算力即权力"——Anthropic 通过 $5B/年的 SpaceX 交易锁定算力，SpaceX 则自建芯片厂 Terafab 垂直整合，xAI 从竞争对手变为基础设施提供商。三家公司围绕算力形成新的战略三角。
 
-- **Anthropic 与 Blackstone 等机构成立未命名合资公司，OpenAI 亦推出 The Deployment Company** — _AINews_ · 合资公司获 $1.5B 注资（三方各 $300M），业务模式是派小团队深入客户现场，与 Anthropic Applied AI 共同开发 Claude 驱动系统，OpenAI 的同名公司也有类似企业化部署定位。两者均试图解决“最后 20% 部署问题”并获取企业差异化数据。
-- **OpenAI 与普华永道合作重塑 CFO 办公室** — _OpenAI News_ · 双方将联手用 AI 代理自动化财务工作流、提升预测与控制，这是 OpenAI 与专业服务巨头深度捆绑的模板化尝试，目标直指企业核心职能外包。
-- **Uber CEO Dara Khosrowshahi 谈 AI 替代司机与自我替代** — _Decoder (The Verge)_ · 在 Uber 年度 Go-Get 大会后，Dara 阐述 Uber 向“超级应用”扩展（含酒店、代购），并明确表示正在构建 AI 代替司机作业的技术路径，甚至调侃 CEO 角色也非不可替代，实质是对 AI 平台可能截走用户关系的防御性回应。
-- **SaaS 免费增值模型在 AI 产品中失灵，Google AI 产品负责人给出替代方案** — _Lenny's Newsletter_ · Vikas Kansal（Google AI 产品负责人）指出，AI 推理成本高、用户消耗非线性，传统 convert-at-scale 的 freemium 策略失效，推荐分级订阅、用量包与价值锚点转移等新模式。
-- **“AI 带来的永久底层阶级”辩论升温，CTO 们涌入 Anthropic 被视作反证** — _Big Technology (Alex Kantrowitz)_ · 前 Instagram、Box、Adept CTO 们放弃高管头衔加入 Anthropic 任技术成员，作者认为这反而证明 AI 时代不是固化阶级，而是高技能人才向核心公司集中的自然现象，反驳了《纽约时报》的悲观论调。
+- [Anthropic-SpaceX/xAI 的 300MW/$5B/yr Colossus I 交易](https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr) — _Latent Space (swyx)_ · Anthropic 在开发者大会上宣布接管全部 Colossus I 算力（"未来几天内"），xAI 由此转型为 neocloud 角色。Elon Musk 在起诉 OpenAI 期间签署此协议，战略时机耐人寻味。([Platformer](https://www.platformer.news/did-xai-just-concede-the-ai-race/) 分析认为 xAI 此举等于承认在 AI 竞赛中落后)
+- [SpaceX 提议投资 $550 亿在得州建设 Terafab 芯片制造设施](http://www.geekpark.net/news/363854) — _极客公园_ · 总资本支出可能达 $1190 亿（接近英伟达整个 2024 财年营收），为 SpaceX、Tesla、xAI 自供 GPU 和自动驾驶芯片，实现从"每年给英伟达送钱"到"把钱送给自己"的战略转向。
+- [苹果与英特尔时隔六年重启合作，英特尔为苹果代工芯片](http://www.geekpark.net/news/363920) — _极客公园_ · 角色完全反转——不再是苹果用英特尔设计的芯片，而是英特尔为苹果生产苹果自研芯片。标志英特尔代工业务获得关键客户，也反映苹果对供应链多元化的需求。
 
 ### 📦 产品 & 平台动向 / Products & Platforms
 
-**为什么本周值得看**：三件产品故事从不同侧面展示了 AI 商业化的加速度：ChatGPT 广告开放自助投放，直接进攻搜索广告腹地；Claude 推出金融服务业部署指南，加速向垂直行业渗透；Stripe 内部 AI 设计原型工具让 PM 和设计师零代码出产品。从外部变现到内部工具链，AI 正重塑企业全流程。
+**为什么本周值得看**: AI 办公套件进入"贴身肉搏"阶段——Anthropic 和 OpenAI 在同一天分别发布 Office 集成和 Excel 插件，中国大厂集体押注"AI 员工"赛道。产品竞争从模型能力转向企业工作流嵌入深度。
 
-- **OpenAI 扩展 ChatGPT 广告：自助 Ads Manager、CPC 竞价与效果衡量上线** — _OpenAI News_ · 广告主可自助创建广告、按点击竞价，并获得曝光和转化数据，而对话内容与广告数据严格隔离以保护隐私。此举使 ChatGPT 成为新的搜索广告库存，直接切入 Google 核心。
-- **Claude 在金融服务业的部署指南发布** — _Claude Blog_ · 指南包含客户案例与采用路线图，聚焦压缩最耗时的流程如合规审查、报告生成，表明 Anthropic 对受监管行业采取了系统化的 onboarding 策略。
-- **Stripe 内部 AI 原型工具 Protodash 颠覆设计流程** — _Lenny's Newsletter_ · 设计经理 Owen Williams 利用 Cursor 规则与 React 组件建成浏览器端原型平台，支持设计评审与变体测试，结果 PM 使用频率与设计师持平，从此公司内部原型迭代从“写备忘录”变成“跑 demo”。
+- [Anthropic 发布 Claude for Excel, PowerPoint, Word（GA）及 Outlook（公测）](https://claude.com/blog/collaborate-with-claude-across-excel-powerpoint-word-and-outlook) — _Claude Blog_ · 所有付费计划可用，直接嵌入 Microsoft Office 套件，与 OpenAI 的 ChatGPT for Excel 形成正面竞争。
+- [OpenAI 全球发布 ChatGPT for Excel 和 Google Sheets 插件](https://www.youtube.com/watch?v=sfkyiXvlYL0) — _OpenAI_ · 由 GPT-5.5 驱动，支持分析、更新、解释电子表格，所有计划可用。同周还发布了与 Box 合作的 GPT-5.5 金融建模案例（19% 性能提升）。
+- [腾讯、阿里、字节、百度等大厂押注"AI 员工"赛道](http://www.geekpark.net/news/363804) — _极客公园_ · 3-4 月间密集上线 AI 原生工作台：腾讯 WorkBuddy、阿里钉钉"悟空"、字节飞书 aily、百度 DuMate。GenSpark 4.0 同步发布，定位"让 AI 员工无处不在"。
+- [Google 发布无屏手环 Fitbit Air，AI 健康订阅成核心](http://www.geekpark.net/news/363933) — _极客公园_ · $99.99 硬件 + $10/月 Google Health Coach AI 订阅。WHOOP（$101 亿估值）和 Oura（$110 亿估值）的成功证明"无屏 + AI"模式成立，Google 用 5 年消化 Fitbit 后交出答卷。
+- [Uber 集成 OpenAI 驱动 AI 助手和语音功能](https://openai.com/index/uber) — _OpenAI News_ · 帮助司机更智能地赚钱、乘客更快叫车，标志 OpenAI 在实时交易市场中的首个大规模落地案例。
+- [Parloa 用 OpenAI 模型构建语音驱动 AI 客服代理](https://openai.com/index/parloa) — _OpenAI News_ · 企业级语音客服方案，支持设计、模拟和部署实时交互。
 
 ### 💰 资本 & 财报 / Capital & Earnings
 
-**为什么本周值得看**：三家大厂同天财报，市场给出了截然相反的定价：微软的 agentic AI 模型被花式测算，Google 因与 Anthropic 的合作关系被重新估值，Meta 广告跑赢却被抛弃。同时，Recursive Superintelligence 以 40 亿美元估值完成 5 亿融资，让市场再次测量“研究自动化”叙事的资本溢价。
+**为什么本周值得看**: 资本继续向头部集中——Anthropic 估值破万亿、Sierra 接近 $160 亿、月之暗面半年融 $39 亿。同时 a16z 和英伟达以"平台级"姿态大规模部署资本，VC 和芯片巨头都在押注基础设施层。
 
-- **微软财报显示 agentic AI 商业模式初露** — _Stratechery_ · 微软在 Azure 与 Copilot 之外，首次在分析师电话会中系统描述 agentic 收费模型，华尔街开始将 AI 视为可量化的经常性收入，而非单纯的 capex 故事。
-- **Google 因 AI 变现和 Anthropic 关系被市场重估，Meta 核心广告再强也难讨巧** — _Stratechery_ · Google 的搜索和云业务中 AI 贡献率被显著上调，且市场猜测其云业务增长部分得益于 Anthropic 客户链；Meta 展示社交广告效率再创新高，但投资人担心 AI 生成内容和元宇宙的长期成本。
-- **Recursive Superintelligence 获 5 亿美元融资，估值 40 亿：让 AI 学会自己搞科研** — _极客公园_ · 由前 Salesforce 首席科学家 Richard Socher 创立，GV 领投、英伟达跟投，核心愿景是“把科学家从循环中移走”，尚无公开产品的阶段就获得独角兽+估值，显示市场对科研自动化叙事的极高期望。
+- [Anthropic 估值 $1-1.2T，年化收入增长 80 倍](https://www.latent.space/p/ainews-anthropic-growing-10xyear) — _Latent Space (swyx)_ · 二级市场和传统媒体确认 Anthropic 在"奇迹 Q1"后一个月内 ARR 跳升 $150 亿，正式超越 OpenAI 成为全球第 11-15 大市值公司。同期 Block（40%）、Coinbase（14%）、Cloudflare（20%）裁员，均以"AI 准备"为由。
+- [月之暗面 Kimi 完成 $20 亿新融资，估值破 $200 亿](http://www.geekpark.net/news/363775) — _极客公园_ · 美团龙珠领投超 $2 亿，中国移动、CPE 参投。不到半年累计融资超 $39 亿，估值较去年 11 月翻 4 倍有余，成为中国大模型创业公司累计融资最多。
+- [Sierra 以 $158 亿估值完成 $9.5 亿融资](https://www.newcomer.co/p/customer-support-and-dictation-loom) — _Newcomer (Eric Newcomer)_ · Tiger Global 和 GV 领投。CEO Bret Taylor 透露 Sierra 的 AI 客服代理已互相通过电话——"据我所知没有密谋"。
+- [a16z 加密基金五号募资 $22 亿](https://a16z.simplecast.com/episodes/crypto-fund-5-we-raised-22b-heres-why-___CC391) — _a16z Podcast_ · 讨论加密从意识形态运动转向务实产品生态，稳定币、链上金融、AI 与加密的交集成为重点方向。
+- [英伟达 2026 年已承诺 $400 亿 AI 股权投资](http://www.geekpark.net/news/363934) — _极客公园_ · 其中 $300 亿投向 OpenAI，另向康宁（$32 亿）、IREN（$21 亿）等出手。英伟达从芯片供应商转向"AI 基建操盘手"，管理层预期 Blackwell 和 Rubin 系列到 2027 年底累计创收至少 $1 万亿。
+- [Stratechery 分析五大科技巨头 Q1 财报](https://stratechery.com/2026/earning-spending/) — _Stratechery_ · Apple、Amazon、Meta、Google、Microsoft 一季度 AI 资本支出是曼哈顿计划三倍以上，且无放缓迹象。
 
-### ⚖️ 政策 & 地缘 / Policy & Geopolitics
+### 📈 VC & 市场观点 / VC & Market Perspectives
 
-**为什么本周值得看**：三件事构成了本周的地缘政策矛盾体：特朗普政府突然从反监管转向担忧 AI 末日风险；美国官方与业界高调指控中国机构进行“工业级蒸馏攻击”；部分 AI 研究者则警告“蒸馏攻击”这个术语本身可能扼杀合法研究。安全与开放、遏制与创新之间的张力从未如此密集。
+**为什么本周值得看**: 本周的 VC 观点集中在"治理结构"和"基础设施创新"两个方向——Ben Horowitz 讨论 VC 与国家战略的融合，Eric Ries 以 Anthropic 为例分析使命驱动公司的治理优势，Starcloud 则提出太空计算的激进愿景。
 
-- **特朗普政府 AI 政策急转：从“不恐慌”到“看末日”** — _Platformer_ · 文章回溯副总统万斯在巴黎 AI 峰会上抨击安全监管，到如今白宫高官开始私下示警 AI 失控风险，政策层正在经历从放松管制到接受“末日论”框架的重大转向。
-- **如何在中国买到便宜的 Claude Token：白宫与 Anthropic 报告背后的蒸馏网络** — _ChinaTalk_ · 详细披露中国实验室如何通过超过两万个欺诈代理账户的中间网络，系统性地对前沿模型进行蒸馏规避，白宫和 Anthropic 均已发出正式报告，视其为“工业规模的蒸馏攻击”。
-- **“蒸馏攻击”术语争议：一刀切可能扼杀开放研究** — _Interconnects_ · Nathan Lambert 指出，将中国蒸馏行为泛称为“攻击”会让所有合法的知识蒸馏研究被污名化，阻碍学术界和创业公司以蒸馏方式降低模型应用门槛，呼吁术语使用要精准。
-- **a16z 播客：言论自由、AI 外交与“西方灵魂的 AI”** — _a16z Podcast_ · 负责公共外交的副国务卿 Sarah Rogers 阐述了 AI 时代如何通过维持开放系统和自由表达来保持美国软实力，提出要防止审查和过度监管，保存“AI with a Western soul”，25 分钟思想对话。
+- [Ben Horowitz 讨论下一个技术时代的领导力](https://a16z.simplecast.com/episodes/ben-horowitz-on-the-next-technology-era-aoL5sxwd) — _a16z Podcast_ · 在 a16z 史上最大基金募资后，Horowitz 讨论 VC、技术和国家战略日益交织，强调美国维持技术领导力对全球影响力的关键性。~29 分钟听。
+- [Eric Ries 谈如何建立经得起任何时代的公司](https://www.youtube.com/watch?v=PoJ1vTdHpks) — _Lenny's Podcast_ · 《精益创业》作者新书《Incorruptible》讨论 80% 风投支持的创始人上市三年内被赶下台，以及 Anthropic、Costco 等公司如何通过治理结构保护使命。
+- [Starcloud CEO 论证太空计算的经济性](https://www.youtube.com/watch?v=94b6i5jI1nE) — _Sequoia Capital (incl. Training Data)_ · 计划建设 88,000 颗卫星星座，在低地球轨道提供 20GW 推理算力。认为发射成本降至 $500/kg 时太空算力将低于地面，Starship 是关键。
 
 ## 📚 长读 / Long Reads (周末再看)
 
-- **[Microsoft Earnings, Apple Earnings](https://stratechery.com/2026/microsoft-earnings-apple-earnings/)** — _Stratechery_ · Ben Thompson 系统拆解微软 agentic 商业模型的财务密码，以及苹果因内存与芯片缺货在 AI 时代的尴尬。~15 min read.
-- **[Google Earnings, Meta Earnings](https://stratechery.com/2026/google-earnings-meta-earnings/)** — _Stratechery_ · 深度对比两大广告巨头在 AI 时代的股价分歧，尤其关于 Google 与 Anthropic 关系的测算值得琢磨。~15 min read.
-- **[Dara Khosrowshahi on replacing Uber drivers — and himself — with AI](https://www.youtube.com/watch?v=zf66dfYpMY8)** — _Decoder (The Verge)_ · Uber 掌门人罕见坦陈 AI 对平台劳动力模式和自己角色的终极威胁，兼谈超级应用扩张决策框架。~45 min listen.
-- **[Sarah Rogers: Free Speech, AI Diplomacy, and What America Owes Its Allies](https://a16z.simplecast.com/episodes/sarah-rogers-free-speech-ai-diplomacy-and-what-america-owes-its-allies-DE_Sv7Ni)** — _a16z Podcast_ · 政策制定者视角的 AI 地缘思想，对理解美国“开源 vs 封闭”政策话语的深层逻辑有帮助。~25 min listen.
-- **[Why SaaS freemium playbooks don’t work in AI, and what to do instead](https://www.lennysnewsletter.com/p/why-saas-freemium-playbooks-dont)** — _Lenny's Newsletter_ · Google AI 产品负责人写的新变现法则，用例证丰富，适合产品经理与商业化团队周末细读。~12 min read.
+- **[Ben Horowitz on the Next Technology Era](https://a16z.simplecast.com/episodes/ben-horowitz-on-the-next-technology-era-aoL5sxwd)** — _a16z Podcast_ · a16z 联合创始人在史上最大基金募资后讨论 VC 与国家战略融合、美国技术领导力的未来。~29 分钟听。
+- **[Crypto Fund 5: We Raised $2.2B. Here's Why.](https://a16z.simplecast.com/episodes/crypto-fund-5-we-raised-22b-heres-why-___CC391)** — _a16z Podcast_ · a16z 加密 GP 团队讨论加密从意识形态到务实产品的转型、稳定币和 AI 交集。~62 分钟听。
+- **[E235｜20年内CAR-T治愈癌症？与刘诚博士聊聊癌症治疗的底层哲学](https://sv101.fireside.fm/248)** — _硅谷101_ · CAR-T 领域顶级科学家回顾癌症治疗技术演进，讨论礼来 $70 亿收购 Kelonia 等药企押注。~70 分钟听。
+- **[How to build a company that withstands any era | Eric Ries](https://www.youtube.com/watch?v=PoJ1vTdHpks)** — _Lenny's Podcast_ · 《精益创业》作者新书讨论 Anthropic 等公司的治理结构如何保护使命。~60 分钟看/听。
 
 ## 📊 本周观察
 
-本周最突出的交叉模式是：模型公司同时卷入两场截然不同的战斗——一边在美国本土建合资公司、做 CFO 自动化、打广告市场，试图通过“服务化”和“产品化”两条腿走出 API 定价的薄利区；另一边，围绕中国蒸馏行为的指控正在迅速升级为贸易级叙事。前者是商业模式的内卷突围，后者是地缘摩擦的火山口。交集在于：如果美方进一步封堵 API 访问，企业服务的“现场部署”模式反而多出一层供应链安全的硬需求，可能加速合资模式的铺开。
+本周最清晰的模式是**算力供应链的垂直整合加速**。Anthropic 通过 $5B/年交易锁定 SpaceX 算力，SpaceX 又自建 $550 亿芯片厂，英伟达则以 $400 亿股权投资从供应商变为"基建操盘手"——三股力量都在试图控制从芯片到算力到模型的全链条。与此同时，应用层的"AI 员工"赛道进入白热化，Anthropic 和 OpenAI 在同一天发布 Office 集成，中国大厂集体上线 AI 工作台，产品竞争已从模型能力转向企业工作流嵌入深度。
 
 ## 🗑️ 已分流 / 过滤
 
-本周过滤掉 15 条噪声内容；另有 12 条技术类内容已分流至技术报告。
+本周过滤掉 37 条噪声内容；另有 29 条技术类内容已分流至技术报告。

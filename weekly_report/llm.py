@@ -110,7 +110,7 @@ def _client() -> OpenAI:
         raise RuntimeError(
             "DEEPSEEK_API_KEY not set. Put it in .env or export it."
         )
-    return OpenAI(api_key=api_key, base_url=base_url, timeout=120.0)
+    return OpenAI(api_key=api_key, base_url=base_url, timeout=900.0)
 
 
 def model_filter() -> str:
@@ -132,7 +132,7 @@ def _call(
     response_format: Optional[dict[str, Any]] = None,
     temperature: float = 0.2,
     max_tokens: Optional[int] = None,
-    max_retries: int = 4,
+    max_retries: int = 10,
     tracker: Optional[CostTracker] = None,
 ) -> tuple[str, LLMUsage]:
     cli = _client()
